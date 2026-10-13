@@ -200,7 +200,7 @@ const addressToast = document.querySelector('#address-toast');
 if (copyAddressTrigger && addressToast) {
 	let toastTimer = null;
 	copyAddressTrigger.addEventListener('click', async () => {
-		const addressText = 'CIHOPRINTSHOP Digital Printing, Jakarta. Layanan digital printing format lebar, stiker, dan kemasan.';
+		const addressText = 'CIHOPRINTSHOP Digital Printing – Jl. Radio Dalam Raya No.F3, RT.5/RW.4, Gandaria Utara, Kebayoran Baru, Jakarta Selatan 12140. Buka setiap hari 08.00–24.00 WIB.';
 		try {
 			if (navigator.clipboard && window.isSecureContext) {
 				await navigator.clipboard.writeText(addressText);
