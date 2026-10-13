@@ -1,37 +1,247 @@
 @extends('layouts.app')
 
-@section('title', 'Project')
-@section('description', 'Jelajahi inspirasi produk digital printing untuk promosi, kemasan, dan kebutuhan personal.')
+@section('title', 'Portofolio & Hasil Cetak | CIHOPRINTSHOP')
+@section('description', 'Lihat galeri hasil cetak digital printing CIHOPRINTSHOP: Banner promosi, label stiker kemasan, stationery kantor, dan kemasan produk berkualitas tinggi.')
 
 @section('content')
-	<section class="content-page">
-		<div class="page-hero page-hero-compact">
+	<section class="content-page project-page">
+		<!-- Hero Masthead -->
+		<div class="page-hero-premium">
 			<div class="page-wrap">
-				<p class="eyebrow"><span></span> Project & inspirasi</p>
-				<h1>Beragam ide,<br><span class="accent">siap jadi nyata.</span></h1>
-				<p class="page-lead">Temukan inspirasi untuk materi promosi, kemasan produk, dan kebutuhan cetak lainnya.</p>
+				<div class="page-hero-header">
+					<div class="badge-pill badge-pill-yellow">
+						<span class="status-indicator"></span> BUKTI NYATA KUALITAS PRODUKSI
+					</div>
+					<h1>Portofolio & Hasil Cetak<br><span class="accent">Presisi untuk Setiap Industri.</span></h1>
+					<p class="page-lead">Jelajahi berbagai proyek nyata yang telah kami selesaikan untuk brand UMKM, korporasi, perbankan, restoran, hingga perorangan di Jakarta dan seluruh Indonesia.</p>
+				</div>
+
+				<!-- Stats Strip -->
+				<div class="stats-strip">
+					<div class="stat-item">
+						<span class="stat-val">1.000<span class="stat-accent">+</span></span>
+						<span class="stat-label">Project Selesai Tiap Bulan</span>
+					</div>
+					<div class="stat-item">
+						<span class="stat-val">300<span class="stat-accent">DPI</span></span>
+						<span class="stat-label">Standar Ketajaman Minimum</span>
+					</div>
+					<div class="stat-item">
+						<span class="stat-val">100<span class="stat-accent">%</span></span>
+						<span class="stat-label">Garansi Kerapian Potong</span>
+					</div>
+					<div class="stat-item">
+						<span class="stat-val">1-2<span class="stat-accent">Hari</span></span>
+						<span class="stat-label">Rata-rata Waktu Produksi</span>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="page-wrap project-content">
-			<div class="project-grid">
-				<article class="project-card project-card-featured">
-					<img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Peralatan desain dan warna untuk materi promosi" loading="lazy">
-					<div class="project-caption"><span>01 / PROMOSI</span><h2>Materi promosi</h2><p>Poster, flyer, dan identitas brand.</p></div>
+
+		<!-- Portfolio Gallery Grid & Filter -->
+		<div class="page-wrap project-content-v2">
+			<!-- Interactive Category Filter Bar -->
+			<div class="filter-container" id="project-filter" role="tablist" aria-label="Filter Kategori Project">
+				<button class="filter-btn is-active" type="button" data-filter="all">
+					Semua Project <span class="filter-count">8</span>
+				</button>
+				<button class="filter-btn" type="button" data-filter="banner">
+					Banner & Reklame <span class="filter-count">2</span>
+				</button>
+				<button class="filter-btn" type="button" data-filter="stiker">
+					Label & Stiker <span class="filter-count">2</span>
+				</button>
+				<button class="filter-btn" type="button" data-filter="stationery">
+					Stationery & Promosi <span class="filter-count">2</span>
+				</button>
+				<button class="filter-btn" type="button" data-filter="kemasan">
+					Kemasan & Box <span class="filter-count">2</span>
+				</button>
+			</div>
+
+			<!-- Projects Gallery -->
+			<div class="project-gallery-grid" id="project-list">
+				<!-- Project 1 (Featured) -->
+				<article class="project-card-v2 is-featured-project" data-category="banner">
+					<div class="project-thumb-box">
+						<img class="project-thumb-img" src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Spanduk dan backdrop promosi format lebar" loading="lazy">
+						<span class="project-category-tag">Banner & Reklame</span>
+					</div>
+					<div class="project-body">
+						<h3>Backdrop Panggung Seminar & Reklame Storefront</h3>
+						<p>Produksi spanduk dan backdrop panggung format besar beresolusi tajam dengan finishing mata ayam (keling) presisi di setiap sudutnya untuk pameran berskala nasional.</p>
+						<div class="project-meta-row">
+							<span class="project-meta-pill"><strong>Bahan:</strong> Flexi Frontlite 440g</span>
+							<span class="project-meta-pill"><strong>Finishing:</strong> Seaming + Mata Ayam</span>
+							<span class="project-meta-pill"><strong>Area:</strong> Outdoor & Indoor</span>
+						</div>
+					</div>
 				</article>
-				<article class="project-card">
-					<img src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Produk dengan kemasan dan label" loading="lazy">
-					<div class="project-caption"><span>02 / KEMASAN</span><h2>Kemasan & label</h2><p>Detail yang menjaga karakter produk.</p></div>
+
+				<!-- Project 2 -->
+				<article class="project-card-v2" data-category="stiker">
+					<div class="project-thumb-box">
+						<img class="project-thumb-img" src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Label stiker kemasan botol minuman dingin" loading="lazy">
+						<span class="project-category-tag">Label & Stiker</span>
+					</div>
+					<div class="project-body">
+						<h3>Label Botol Minuman & Frozen Food Waterproof</h3>
+						<p>Stiker vinyl tahan air yang direkatkan pada botol kaca dan wadah plastik dingin. Tetap menempel kuat walau terendam es batu dan suhu beku.</p>
+						<div class="project-meta-row">
+							<span class="project-meta-pill"><strong>Bahan:</strong> Vinyl Glossy</span>
+							<span class="project-meta-pill"><strong>Potong:</strong> Kiss Cut Presisi</span>
+						</div>
+					</div>
 				</article>
-				<article class="project-card">
-					<img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Buku catatan dan stationery berwarna" loading="lazy">
-					<div class="project-caption"><span>03 / STATIONERY</span><h2>Alat tulis custom</h2><p>Notebook dan kebutuhan kantor.</p></div>
+
+				<!-- Project 3 -->
+				<article class="project-card-v2" data-category="stationery">
+					<div class="project-thumb-box">
+						<img class="project-thumb-img" src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Stationery buku catatan custom dan materi kantor" loading="lazy">
+						<span class="project-category-tag">Stationery & Promosi</span>
+					</div>
+					<div class="project-body">
+						<h3>Buku Agenda Custom & Company Profile Eksklusif</h3>
+						<p>Perlengkapan stationery perkantoran dengan laminasi matte lembut dan jilid ring kawat rapi untuk keperluan seminar dan cinderamata korporasi.</p>
+						<div class="project-meta-row">
+							<span class="project-meta-pill"><strong>Cover:</strong> Art Carton 310g</span>
+							<span class="project-meta-pill"><strong>Finishing:</strong> Laminasi Doff</span>
+						</div>
+					</div>
 				</article>
-				<article class="project-card">
-					<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Produk hadiah dengan presentasi yang rapi" loading="lazy">
-					<div class="project-caption"><span>04 / MERCHANDISE</span><h2>Merchandise</h2><p>Item personal dan kebutuhan acara.</p></div>
+
+				<!-- Project 4 -->
+				<article class="project-card-v2" data-category="kemasan">
+					<div class="project-thumb-box">
+						<img class="project-thumb-img" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Kotak kemasan gift box custom" loading="lazy">
+						<span class="project-category-tag">Kemasan & Box</span>
+					</div>
+					<div class="project-body">
+						<h3>Gift Box Packaging & Custom Sleeve Retail</h3>
+						<p>Kemasan karton berstandar food grade dengan pola potong die-cut presisi dan lipatan kokoh untuk mengangkat prestise brand konsumen.</p>
+						<div class="project-meta-row">
+							<span class="project-meta-pill"><strong>Bahan:</strong> Ivory 300g</span>
+							<span class="project-meta-pill"><strong>Finishing:</strong> Die Cut + Foil</span>
+						</div>
+					</div>
+				</article>
+
+				<!-- Project 5 -->
+				<article class="project-card-v2" data-category="banner">
+					<div class="project-thumb-box">
+						<img class="project-thumb-img" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Roll Up Banner promosi interior showroom" loading="lazy">
+						<span class="project-category-tag">Banner & Reklame</span>
+					</div>
+					<div class="project-body">
+						<h3>Roll Up Banner Pameran & Display Showroom</h3>
+						<p>Media display promosi indoor dengan material Albatros tanpa pori. Warna solid pekat dan tidak melengkung di tepi saat dipajang tegak.</p>
+						<div class="project-meta-row">
+							<span class="project-meta-pill"><strong>Bahan:</strong> Albatros Matte</span>
+							<span class="project-meta-pill"><strong>Rangka:</strong> Aluminium Portabel</span>
+						</div>
+					</div>
+				</article>
+
+				<!-- Project 6 -->
+				<article class="project-card-v2" data-category="stiker">
+					<div class="project-thumb-box">
+						<img class="project-thumb-img" src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Stiker hologram segel produk dan garansi" loading="lazy">
+						<span class="project-category-tag">Label & Stiker</span>
+					</div>
+					<div class="project-body">
+						<h3>Stiker Hologram Segel Produk & Garansi Resmi</h3>
+						<p>Label pengaman dengan efek pelangi berkilau untuk segel kemasan barang berharga, suku cadang, dan sertifikat resmi agar terhindar dari pemalsuan.</p>
+						<div class="project-meta-row">
+							<span class="project-meta-pill"><strong>Bahan:</strong> Rainbow Hologram</span>
+							<span class="project-meta-pill"><strong>Potong:</strong> Die Cut Satuan</span>
+						</div>
+					</div>
+				</article>
+
+				<!-- Project 7 -->
+				<article class="project-card-v2" data-category="stationery">
+					<div class="project-thumb-box">
+						<img class="project-thumb-img" src="https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Brosur promosi dan flyer lipat 3" loading="lazy">
+						<span class="project-category-tag">Stationery & Promosi</span>
+					</div>
+					<div class="project-body">
+						<h3>Flyer Promosi Event & Brosur Menu Cafe Lipat 3</h3>
+						<p>Cetak materi promosi dengan kertas Art Paper halus mengkilap, hasil lipatan presisi tanpa pecah warna pada garis lipat.</p>
+						<div class="project-meta-row">
+							<span class="project-meta-pill"><strong>Bahan:</strong> Art Paper 150g</span>
+							<span class="project-meta-pill"><strong>Finishing:</strong> Creasing + Lipat 3</span>
+						</div>
+					</div>
+				</article>
+
+				<!-- Project 8 -->
+				<article class="project-card-v2" data-category="kemasan">
+					<div class="project-thumb-box">
+						<img class="project-thumb-img" src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Paper bag craft daur ulang ramah lingkungan" loading="lazy">
+						<span class="project-category-tag">Kemasan & Box</span>
+					</div>
+					<div class="project-body">
+						<h3>Paper Bag Distro & Hang Tag Pakaian Ramah Lingkungan</h3>
+						<p>Kemasan berkarakter artisan dari kertas Kraft coklat berserat alami, memberikan identitas hangat dan bernilai estetik tinggi pada produk fashion.</p>
+						<div class="project-meta-row">
+							<span class="project-meta-pill"><strong>Bahan:</strong> Kraft Paper 280g</span>
+							<span class="project-meta-pill"><strong>Aksen:</strong> Tali Kur + Keling Besi</span>
+						</div>
+					</div>
 				</article>
 			</div>
-			<div class="page-cta"><div><p class="eyebrow"><span></span> KONSULTASI PRODUKSI</p><h2>Siap mewujudkan kebutuhan cetak bisnis Anda?</h2></div><a class="button" href="{{ route('contact') }}">Konsultasi Pemesanan <span class="button-arrow" aria-hidden="true">→</span></a></div>
+
+			<!-- Production Quality Standards Bar -->
+			<div class="quality-standards-bar">
+				<div class="quality-standards-header">
+					<div class="badge-pill">STANDAR KONTROL KUALITAS</div>
+					<h3>Komitmen Kami di Setiap Lembar Cetakan</h3>
+				</div>
+				<div class="quality-grid">
+					<div class="quality-item">
+						<div class="quality-icon">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+						</div>
+						<div>
+							<strong>Pre-Flight File Check</strong>
+							<p>File desain dicek terlebih dahulu: resolusi DPI, format warna CMYK, dan garis potong agar tidak terpotong.</p>
+						</div>
+					</div>
+
+					<div class="quality-item">
+						<div class="quality-icon">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/></svg>
+						</div>
+						<div>
+							<strong>Konsistensi Kalibrasi Warna</strong>
+							<p>Penyetelan warna mesin cetak dilakukan berkala agar cetakan ulang (*re-order*) warnanya tetap sama persis.</p>
+						</div>
+					</div>
+
+					<div class="quality-item">
+						<div class="quality-icon">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="1" y="3" width="15" height="13"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+						</div>
+						<div>
+							<strong>Proteksi Kemasan Aman</strong>
+							<p>Hasil cetak digulung rapi dengan selongsong atau dilapisi kardus pelindung sehingga tidak lecek saat pengiriman.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Bottom CTA -->
+			<div class="page-cta-v2">
+				<div>
+					<div class="badge-pill badge-pill-yellow">KONSULTASI GRATIS</div>
+					<h2>Ingin Mencetak Project Serupa?</h2>
+					<p>Kirimkan file desain Anda untuk pengecekan kesiapan file, rekomendasi bahan, dan penawaran harga terbaik dari tim CIHOPRINTSHOP.</p>
+				</div>
+				<div class="page-cta-actions">
+					<a class="button" href="{{ route('contact') }}">Konsultasi Pemesanan <span class="button-arrow" aria-hidden="true">→</span></a>
+					<a class="button-secondary" href="https://wa.me/6281390001217?text=Halo%20CIHOPRINTSHOP%2C%20saya%20ingin%20konsultasi%20project%20cetak." target="_blank" rel="noopener noreferrer">Chat via WhatsApp <span class="button-arrow" aria-hidden="true">↗</span></a>
+				</div>
+			</div>
 		</div>
 	</section>
 @endsection

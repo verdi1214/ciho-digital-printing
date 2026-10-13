@@ -22,7 +22,7 @@ class ExampleTest extends TestCase
         $response = $this->get('/');
 
         $response->assertStatus(200);
-        $response->assertSee('https://wa.me/62895333364644', false);
+        $response->assertSee('https://wa.me/6281390001217', false);
     }
 
     public function test_contact_page_links_to_admin_whatsapp(): void
@@ -30,8 +30,8 @@ class ExampleTest extends TestCase
         $response = $this->get('/contact');
 
         $response->assertStatus(200);
-        $response->assertSee('https://wa.me/62895333364644', false);
-        $response->assertSee('0895-3333-64644');
+        $response->assertSee('https://wa.me/6281390001217', false);
+        $response->assertSee('0813-9000-1217');
     }
 
     public function test_materials_page_loads_successfully(): void

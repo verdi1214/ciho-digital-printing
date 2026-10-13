@@ -161,3 +161,70 @@ if (menuToggle && mainNav) {
 		}
 	});
 }
+
+/* --- Interactive Filter Component (Materials & Project) --- */
+function setupCategoryFilter(containerSelector, itemSelector) {
+	const filterContainer = document.querySelector(containerSelector);
+	if (!filterContainer) return;
+
+	const filterButtons = filterContainer.querySelectorAll('.filter-btn');
+	const items = document.querySelectorAll(itemSelector);
+
+	filterButtons.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			const targetFilter = btn.dataset.filter;
+
+			filterButtons.forEach((b) => b.classList.remove('is-active'));
+			btn.classList.add('is-active');
+
+			items.forEach((item) => {
+				const itemCategory = item.dataset.category;
+				if (targetFilter === 'all' || itemCategory === targetFilter) {
+					item.style.display = '';
+					item.style.opacity = '1';
+				} else {
+					item.style.display = 'none';
+				}
+			});
+		});
+	});
+}
+
+setupCategoryFilter('#materials-filter', '.material-card-v2');
+setupCategoryFilter('#project-filter', '.project-card-v2');
+
+/* --- Copy Address to Clipboard (Location Page) --- */
+const copyAddressTrigger = document.querySelector('#copy-address-trigger');
+const addressToast = document.querySelector('#address-toast');
+
+if (copyAddressTrigger && addressToast) {
+	let toastTimer = null;
+	copyAddressTrigger.addEventListener('click', async () => {
+		const addressText = 'CIHOPRINTSHOP Digital Printing, Jakarta. Layanan digital printing format lebar, stiker, dan kemasan.';
+		try {
+			if (navigator.clipboard && window.isSecureContext) {
+				await navigator.clipboard.writeText(addressText);
+			} else {
+				const tempInput = document.createElement('textarea');
+				tempInput.value = addressText;
+				document.body.appendChild(tempInput);
+				tempInput.select();
+				document.execCommand('copy');
+				document.body.removeChild(tempInput);
+			}
+
+			const label = document.querySelector('#copy-btn-label');
+			if (label) label.textContent = '✓ Alamat Berhasil Disalin';
+
+			addressToast.classList.add('is-visible');
+			clearTimeout(toastTimer);
+			toastTimer = setTimeout(() => {
+				addressToast.classList.remove('is-visible');
+				if (label) label.textContent = 'Salin Alamat Lengkap';
+			}, 3200);
+		} catch (err) {
+			console.error('Gagal menyalin alamat:', err);
+		}
+	});
+}
+
