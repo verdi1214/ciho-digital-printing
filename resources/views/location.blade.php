@@ -9,7 +9,7 @@
 		<div class="page-hero-premium">
 			<div class="page-wrap">
 				<div class="page-hero-header">
-					<div class="badge-pill badge-pill-yellow">
+					<div class="badge-pill badge-pill-red">
 						<span class="status-indicator"></span> SENTRA PRODUKSI & KANTOR RESMI
 					</div>
 					<h1>Kunjungi Workshop Produksi<br><span class="accent">CIHOPRINTSHOP Jakarta.</span></h1>
@@ -54,14 +54,14 @@
 				<div class="map-container-v2">
 					<iframe
 						class="google-map-iframe"
-						src="https://maps.google.com/maps?q=Jl.+Radio+Dalam+Raya+No.F3+RT.5+RW.4+Gandaria+Utara+Kebayoran+Baru+Jakarta+Selatan+12140&t=&z=17&ie=UTF8&iwloc=&output=embed"
+						src="https://maps.google.com/maps?q=Jl.+Radio+Dalam+Raya+No.F3A,+RT.5%2FRW.4,+Gandaria+Utara,+Kec.+Kby.+Baru,+Kota+Jakarta+Selatan,+Daerah+Khusus+Ibukota+Jakarta+12140&t=&z=17&ie=UTF8&iwloc=&output=embed"
 						loading="lazy"
 						allowfullscreen=""
 						referrerpolicy="no-referrer-when-downgrade"
-						title="Peta Lokasi Workshop CIHOPRINTSHOP – Jl. Radio Dalam Raya No.F3, Gandaria Utara, Jakarta Selatan">
+						title="Peta Lokasi Workshop CIHOPRINTSHOP – Jl. Radio Dalam Raya No.F3A, RT.5/RW.4, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12140">
 					</iframe>
 
-					<a class="map-floating-action" href="https://www.google.com/maps/search/?api=1&query=Jl.+Radio+Dalam+Raya+No.F3+Gandaria+Utara+Kebayoran+Baru+Jakarta+Selatan+12140" target="_blank" rel="noopener noreferrer">
+					<a class="map-floating-action" href="https://www.google.com/maps/search/?api=1&query=Jl.+Radio+Dalam+Raya+No.F3A,+RT.5%2FRW.4,+Gandaria+Utara,+Kec.+Kby.+Baru,+Kota+Jakarta+Selatan,+Daerah+Khusus+Ibukota+Jakarta+12140" target="_blank" rel="noopener noreferrer">
 						<span>Buka Rute di Google Maps</span>
 						<span class="button-arrow" aria-hidden="true">↗</span>
 					</a>
@@ -74,7 +74,7 @@
 				<div class="location-address-block">
 					<div class="badge-pill">ALAMAT WORKSHOP</div>
 					<h3 class="workshop-name">CIHOPRINTSHOP Digital Printing</h3>
-					<p class="workshop-address" id="workshop-full-address">Jl. Radio Dalam Raya No.F3, RT.5/RW.4, Gandaria Utara, Kebayoran Baru, Kota Jakarta Selatan 12140, DKI Jakarta.</p>
+					<p class="workshop-address" id="workshop-full-address">Jl. Radio Dalam Raya No.F3A, RT.5/RW.4, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12140</p>
 					
 					<button class="copy-address-btn" id="copy-address-trigger" type="button" aria-label="Salin alamat workshop">
 						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
@@ -95,7 +95,7 @@
 						</div>
 						<div class="info-row">
 							<span class="info-label">Alamat</span>
-							<strong class="info-value" style="text-align:right;max-width:200px;line-height:1.4">Jl. Radio Dalam Raya No.F3, Gandaria Utara, Jaksel 12140</strong>
+							<strong class="info-value" style="text-align:right;max-width:200px;line-height:1.4">Jl. Radio Dalam Raya No.F3A, RT.5/RW.4, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12140</strong>
 						</div>
 						<div class="info-row">
 							<span class="info-label">Layanan di Tempat</span>
@@ -170,7 +170,7 @@
 				</div>
 				<div class="page-cta-actions">
 					<a class="button" href="https://wa.me/6281390001217?text=Halo%20CIHOPRINTSHOP%2C%20saya%20ingin%20berkunjung%20ke%20workshop." target="_blank" rel="noopener noreferrer">Hubungi WhatsApp Admin <span class="button-arrow" aria-hidden="true">↗</span></a>
-					<a class="button-secondary" href="https://www.google.com/maps/search/?api=1&query=Jl.+Radio+Dalam+Raya+No.F3+Gandaria+Utara+Kebayoran+Baru+Jakarta+Selatan+12140" target="_blank" rel="noopener noreferrer">Buka Peta GPS <span class="button-arrow" aria-hidden="true">↗</span></a>
+					<a class="button-secondary" href="https://www.google.com/maps/search/?api=1&query=Jl.+Radio+Dalam+Raya+No.F3A,+RT.5%2FRW.4,+Gandaria+Utara,+Kec.+Kby.+Baru,+Kota+Jakarta+Selatan,+Daerah+Khusus+Ibukota+Jakarta+12140" target="_blank" rel="noopener noreferrer">Buka Peta GPS <span class="button-arrow" aria-hidden="true">↗</span></a>
 				</div>
 			</div>
 		</div>

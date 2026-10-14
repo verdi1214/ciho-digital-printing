@@ -29,8 +29,6 @@
 				</div>
 			</div>
 		</div>
-		<p class="slide-count"><strong id="current-slide">01</strong> / 03</p>
-		<a class="scroll-cue" href="{{ route('about') }}" aria-label="Lihat informasi tentang CIHOPRINTSHOP">?</a>
 		<span class="sr-only" id="slide-announcement" aria-live="polite"></span>
 	</section>
 	<div class="home-ticker" role="region" aria-label="Layanan dan produk cetak CIHO">
@@ -94,19 +92,19 @@
 			</div>
 			<div class="popular-grid">
 				<a class="popular-product" href="{{ route('contact') }}">
-					<img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Poster warna-warni untuk materi promosi" loading="lazy">
+					<img src="{{ asset('images/produk-kaos-custom.png') }}" alt="Kaos custom hasil cetak CIHOPRINTSHOP" loading="lazy">
 					<span>01 / PROMOSI</span><h3>Poster & flyer</h3><p>Materi promosi untuk brand dan acara.</p>
 				</a>
 				<a class="popular-product" href="{{ route('contact') }}">
-					<img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Botol minum custom untuk merchandise" loading="lazy">
+					<img class="popular-product-medal" src="{{ asset('images/produk-medali.png') }}" alt="Medali custom untuk acara dan perlombaan" loading="lazy">
 					<span>02 / MERCHANDISE</span><h3>Merchandise</h3><p>Produk custom untuk acara dan kebutuhan brand.</p>
 				</a>
 				<a class="popular-product" href="{{ route('contact') }}">
-					<img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Buku catatan untuk stationery custom" loading="lazy">
+					<img src="{{ asset('images/produk-plakat-tumbler.png') }}" alt="Plakat penghargaan dan tumbler custom" loading="lazy">
 					<span>03 / STATIONERY</span><h3>Notebook</h3><p>Stationery untuk hadiah atau kebutuhan kantor.</p>
 				</a>
 				<a class="popular-product" href="{{ route('contact') }}">
-					<img src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Produk dengan kemasan dan label" loading="lazy">
+					<img src="{{ asset('images/produk-powerbank-custom.png') }}" alt="Power bank custom dengan hasil cetak desain" loading="lazy">
 					<span>04 / PRODUK</span><h3>Label & kemasan</h3><p>Detail cetak untuk melengkapi tampilan produk.</p>
 				</a>
 			</div>

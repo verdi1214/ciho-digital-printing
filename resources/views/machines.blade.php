@@ -68,20 +68,68 @@
 				'photo_position' => 'center',
 				'use' => 'Pengerjaan cetak transfer DTF.',
 				'note' => 'Konsultasikan bahan dan kebutuhan desain.',
-			]];
+			], [
+				'number' => 6,
+				'category' => 'Mesin Finishing',
+				'title' => 'Mesin Laminasi',
+				'description' => 'Mesin laminasi roll untuk mendukung proses finishing hasil cetak.',
+				'image' => asset('images/mesin-laminasi.png'),
+				'image_alt' => 'Mesin laminasi roll untuk finishing media cetak',
+				'photo_fit' => 'cover',
+				'photo_position' => 'center',
+				'use' => 'Proses laminasi pada media cetak.',
+				'note' => 'Jenis laminasi menyesuaikan kebutuhan pekerjaan.',
+			],
 
-			foreach (range(6, 10) as $number) {
-				$machines[] = [
-					'number' => $number,
-					'category' => 'Kategori mesin',
-					'title' => 'Nama mesin',
-					'description' => 'Tambahkan nama, fungsi, dan deskripsi singkat mesin ini.',
-					'image' => null,
-					'image_alt' => null,
-					'use' => 'Lengkapi jenis pekerjaan yang dapat ditangani.',
-					'note' => 'Tambahkan spesifikasi setelah datanya terverifikasi.',
-				];
-			}
+				[
+					'number' => 7,
+					'category' => 'Mesin Finishing',
+					'title' => 'Mesin Sealer',
+					'description' => 'Mesin sealer untuk membantu proses penyegelan kemasan.',
+					'image' => asset('images/mesin-sealer.png'),
+					'image_alt' => 'Mesin sealer dengan conveyor belt',
+					'photo_fit' => 'cover',
+					'photo_position' => 'center',
+					'use' => 'Penyegelan kemasan.',
+					'note' => 'Sesuaikan penggunaan dengan kebutuhan kemasan.',
+				],
+				[
+					'number' => 8,
+					'category' => 'Mesin Finishing',
+					'title' => 'Mesin Laminasi Roll',
+					'description' => 'Mesin laminasi roll untuk membantu proses finishing cetakan.',
+					'image' => asset('images/mesin-laminasi-roll.png'),
+					'image_alt' => 'Mesin laminasi roll meja untuk finishing cetakan',
+					'photo_fit' => 'cover',
+					'photo_position' => 'center',
+					'use' => 'Proses laminasi pada media cetak.',
+					'note' => 'Jenis laminasi menyesuaikan kebutuhan pekerjaan.',
+				],
+				[
+					'number' => 9,
+					'category' => 'Mesin Finishing',
+					'title' => 'Mesin Jilid',
+					'description' => 'Mesin jilid untuk membantu proses penjilidan dokumen.',
+					'image' => asset('images/mesin-jilid.png'),
+					'image_alt' => 'Mesin jilid dokumen di meja produksi',
+					'photo_fit' => 'cover',
+					'photo_position' => 'center',
+					'use' => 'Proses penjilidan dokumen.',
+					'note' => 'Tanyakan jenis jilid yang tersedia.',
+				],
+				[
+					'number' => 10,
+					'category' => 'Mesin Cetak',
+					'title' => 'Printer Multifungsi',
+					'description' => 'Printer multifungsi untuk kebutuhan cetak dan pengelolaan dokumen.',
+					'image' => asset('images/printer-multifungsi.png'),
+					'image_alt' => 'Printer multifungsi di ruang produksi',
+					'photo_fit' => 'cover',
+					'photo_position' => 'center',
+					'use' => 'Pengerjaan cetak dokumen.',
+					'note' => 'Konsultasikan kebutuhan cetak dokumen.',
+				],
+			];
 		@endphp
 		<div class="page-wrap machine-content">
 			<div class="machine-grid">

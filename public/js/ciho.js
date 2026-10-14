@@ -14,8 +14,8 @@ const slides = [
 		actionUrl: aboutUrl
 	},
 	{
-		image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=2200&q=88',
-		alt: 'Peralatan desain dan warna untuk materi promosi',
+		image: '/images/hero-produk-kaos.png',
+		alt: 'Kaos custom dan pakaian hasil cetak CIHOPRINTSHOP',
 		eyebrow: 'Layanan utama',
 		titleMain: 'Cetak untuk banyak',
 		titleAccent: 'kebutuhan.',
@@ -124,7 +124,6 @@ if (hero && heroImage) {
 			heroImage.classList.remove('is-changing');
 		}
 		heroImage.alt = slide.alt;
-		document.querySelector('#current-slide').textContent = String(activeSlide + 1).padStart(2, '0');
 		dots.forEach((dot, dotIndex) => dot.setAttribute('aria-current', String(dotIndex === activeSlide)));
 		scheduleAutoplay();
 	}
@@ -200,7 +199,7 @@ const addressToast = document.querySelector('#address-toast');
 if (copyAddressTrigger && addressToast) {
 	let toastTimer = null;
 	copyAddressTrigger.addEventListener('click', async () => {
-		const addressText = 'CIHOPRINTSHOP Digital Printing – Jl. Radio Dalam Raya No.F3, RT.5/RW.4, Gandaria Utara, Kebayoran Baru, Jakarta Selatan 12140. Buka setiap hari 08.00–24.00 WIB.';
+		const addressText = 'CIHOPRINTSHOP Digital Printing – Jl. Radio Dalam Raya No.F3A, RT.5/RW.4, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12140. Buka setiap hari 08.00–24.00 WIB.';
 		try {
 			if (navigator.clipboard && window.isSecureContext) {
 				await navigator.clipboard.writeText(addressText);
@@ -227,4 +226,3 @@ if (copyAddressTrigger && addressToast) {
 		}
 	});
 }
-
