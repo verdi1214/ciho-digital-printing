@@ -19,12 +19,8 @@
 				<!-- Stats Strip -->
 				<div class="stats-strip">
 					<div class="stat-item">
-						<span class="stat-val">08.00<span class="stat-accent">–</span>24.00</span>
+						<span class="stat-val">08.00<span class="stat-accent">–</span>23.59</span>
 						<span class="stat-label">Jam Operasional (Setiap Hari)</span>
-					</div>
-					<div class="stat-item">
-						<span class="stat-val">100<span class="stat-accent">+</span></span>
-						<span class="stat-label">Sampel Material Fisik Siap Dicek</span>
 					</div>
 					<div class="stat-item">
 						<span class="stat-val">Gratis</span>
@@ -91,7 +87,7 @@
 					<div class="contact-info-grid">
 						<div class="info-row">
 							<span class="info-label">Setiap Hari</span>
-							<strong class="info-value">08.00 – 24.00 WIB</strong>
+							<strong class="info-value">08.00 – 23.59 WIB</strong>
 						</div>
 						<div class="info-row">
 							<span class="info-label">Alamat</span>
@@ -120,43 +116,6 @@
 				<a class="button" href="https://wa.me/6281390001217?text=Halo%20CIHOPRINTSHOP%2C%20saya%20ingin%20berkunjung%20ke%20workshop." target="_blank" rel="noopener noreferrer">
 					Konfirmasi Kunjungan via WA <span class="button-arrow" aria-hidden="true">↗</span>
 				</a>
-			</div>
-		</div>
-
-		<!-- Transport Guide Section -->
-		<div class="page-wrap">
-			<div class="transport-section-v2">
-				<div class="transport-header">
-					<div class="badge-pill">AKSES & TRANSPORTASI</div>
-					<h3>Panduan Menuju Workshop CIHO</h3>
-					<p>Kemudahan akses transportasi untuk menjamin kelancaran kunjungan maupun pengiriman pesanan Anda.</p>
-				</div>
-
-				<div class="transport-grid-v2">
-					<div class="transport-card-v2">
-						<div class="transport-icon-box">
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C2.1 10.8 2 11 2 11.2V16c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
-						</div>
-						<h4>Mobil & Kendaraan Pribadi</h4>
-						<p>Jalan akses leluasa dua arah dengan area parkir mobil tamu yang aman persis di depan gedung workshop, memudahkan proses bongkar muat.</p>
-					</div>
-
-					<div class="transport-card-v2">
-						<div class="transport-icon-box">
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
-						</div>
-						<h4>Motor & Kurir Instan (Ojol)</h4>
-						<p>Sangat mudah diakses oleh kurir GoSend / GrabExpress. Titik jemput jelas dan pesanan yang siap kirim diserahkan instan tanpa antre.</p>
-					</div>
-
-					<div class="transport-card-v2">
-						<div class="transport-icon-box">
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-						</div>
-						<h4>Truk & Ekspedisi Kargo</h4>
-						<p>Mendukung armada kargo dan ekspedisi antar-kota untuk pesanan partai besar dengan fasilitas loading barang yang lapang dan aman.</p>
-					</div>
-				</div>
 			</div>
 		</div>
 

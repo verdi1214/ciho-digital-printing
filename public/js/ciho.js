@@ -199,7 +199,7 @@ const addressToast = document.querySelector('#address-toast');
 if (copyAddressTrigger && addressToast) {
 	let toastTimer = null;
 	copyAddressTrigger.addEventListener('click', async () => {
-		const addressText = 'CIHOPRINTSHOP Digital Printing – Jl. Radio Dalam Raya No.F3A, RT.5/RW.4, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12140. Buka setiap hari 08.00–24.00 WIB.';
+		const addressText = 'CIHOPRINTSHOP Digital Printing – Jl. Radio Dalam Raya No.F3A, RT.5/RW.4, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12140. Buka setiap hari 08.00–23.59 WIB.';
 		try {
 			if (navigator.clipboard && window.isSecureContext) {
 				await navigator.clipboard.writeText(addressText);

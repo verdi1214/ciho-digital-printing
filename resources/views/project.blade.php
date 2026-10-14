@@ -23,10 +23,6 @@
 						<span class="stat-label">Project Selesai Tiap Bulan</span>
 					</div>
 					<div class="stat-item">
-						<span class="stat-val">300<span class="stat-accent">DPI</span></span>
-						<span class="stat-label">Standar Ketajaman Minimum</span>
-					</div>
-					<div class="stat-item">
 						<span class="stat-val">100<span class="stat-accent">%</span></span>
 						<span class="stat-label">Garansi Kerapian Potong</span>
 					</div>
@@ -189,45 +185,6 @@
 						</div>
 					</div>
 				</article>
-			</div>
-
-			<!-- Production Quality Standards Bar -->
-			<div class="quality-standards-bar">
-				<div class="quality-standards-header">
-					<div class="badge-pill">STANDAR KONTROL KUALITAS</div>
-					<h3>Komitmen Kami di Setiap Lembar Cetakan</h3>
-				</div>
-				<div class="quality-grid">
-					<div class="quality-item">
-						<div class="quality-icon">
-							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-						</div>
-						<div>
-							<strong>Pre-Flight File Check</strong>
-							<p>File desain dicek terlebih dahulu: resolusi DPI, format warna CMYK, dan garis potong agar tidak terpotong.</p>
-						</div>
-					</div>
-
-					<div class="quality-item">
-						<div class="quality-icon">
-							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/></svg>
-						</div>
-						<div>
-							<strong>Konsistensi Kalibrasi Warna</strong>
-							<p>Penyetelan warna mesin cetak dilakukan berkala agar cetakan ulang (*re-order*) warnanya tetap sama persis.</p>
-						</div>
-					</div>
-
-					<div class="quality-item">
-						<div class="quality-icon">
-							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="1" y="3" width="15" height="13"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-						</div>
-						<div>
-							<strong>Proteksi Kemasan Aman</strong>
-							<p>Hasil cetak digulung rapi dengan selongsong atau dilapisi kardus pelindung sehingga tidak lecek saat pengiriman.</p>
-						</div>
-					</div>
-				</div>
 			</div>
 
 			<!-- Bottom CTA -->

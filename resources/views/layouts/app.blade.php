@@ -87,16 +87,42 @@
 
 			<div class="footer-contact-row">
 				<a class="footer-contact-item" href="https://wa.me/6281390001217" target="_blank" rel="noopener noreferrer">
-					<span class="footer-contact-icon" aria-hidden="true">↗</span>
+					<span class="footer-contact-icon" aria-hidden="true">
+						<svg viewBox="0 0 32 32" focusable="false"><path d="M16 3.5a12.5 12.5 0 0 0-10.7 19L4 28l5.7-1.5A12.5 12.5 0 1 0 16 3.5Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M11.1 9.5c-.3-.6-.6-.6-.9-.6h-.8c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.2s1.3 3.7 1.5 4c.2.3 2.7 4.2 6.5 5.8.9.4 1.6.6 2.1.7.9.2 1.7.2 2.3.1.7-.1 2-.8 2.3-1.7.3-.8.3-1.6.2-1.7-.1-.2-.4-.3-.8-.5l-2.4-1.1c-.3-.1-.6-.2-.8.2-.3.4-.8 1.1-1.1 1.3-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.8-1.1-1-1.8-2.2-2-2.5-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.5-.6.1-.2.1-.4 0-.6l-.9-2.1Z" fill="currentColor"/></svg>
+					</span>
 					<span><strong>WhatsApp Admin</strong><small>0813-9000-1217</small></span>
 				</a>
 				<a class="footer-contact-item" href="{{ route('location') }}">
-					<span class="footer-contact-icon" aria-hidden="true">⌖</span>
+					<span class="footer-contact-icon" aria-hidden="true">
+						<svg viewBox="0 0 32 32" focusable="false">
+							<defs>
+								<clipPath id="google-maps-pin">
+									<path d="M16 1.5A12.5 12.5 0 0 0 3.5 14c0 7.2 12.5 17.5 12.5 17.5S28.5 21.2 28.5 14A12.5 12.5 0 0 0 16 1.5Z"/>
+								</clipPath>
+							</defs>
+							<g clip-path="url(#google-maps-pin)">
+								<path fill="#4285F4" d="M0 0h32v32H0z"/>
+								<path fill="#EA4335" d="M0 0h32v13c-5.7 0-9.3 3.5-16 3.5S5.7 13 0 13z"/>
+								<path fill="#FBBC04" d="M16 11c5.8 0 9.8 2.2 16 2.2V32H18c0-8.5-.5-14-2-21z"/>
+								<path fill="#34A853" d="M0 13.2C6.2 13.2 10.2 11 16 11c-1.5 7-2 12.5-2 21H0z"/>
+							</g>
+							<circle cx="16" cy="14" r="4.2" fill="#fff"/>
+						</svg>
+					</span>
 					<span><strong>Lokasi Workshop</strong><small>Jl. Radio Dalam Raya No.F3A, Gandaria Utara, Jakarta Selatan</small></span>
 				</a>
 				<div class="footer-contact-item">
-					<span class="footer-contact-icon" aria-hidden="true">◷</span>
-					<span><strong>Jam Operasional</strong><small>Setiap hari, 08.00–24.00 WIB</small></span>
+					<span class="footer-contact-icon" aria-hidden="true">
+						<svg viewBox="0 0 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+							<circle cx="16" cy="16" r="11.5" fill="#fff" stroke="#fff" stroke-width="3"/>
+							<circle cx="16" cy="16" r="11.5" stroke="#EA4335" stroke-width="3" stroke-dasharray="15 57" transform="rotate(-45 16 16)"/>
+							<circle cx="16" cy="16" r="11.5" stroke="#FBBC04" stroke-width="3" stroke-dasharray="15 57" transform="rotate(45 16 16)"/>
+							<circle cx="16" cy="16" r="11.5" stroke="#34A853" stroke-width="3" stroke-dasharray="15 57" transform="rotate(135 16 16)"/>
+							<path d="M16 10.5v5.7l4.2 2.4" stroke="#4285F4" stroke-width="2.2"/>
+							<circle cx="16" cy="16" r="1.6" fill="#EA4335"/>
+						</svg>
+					</span>
+					<span><strong>Jam Operasional</strong><small>Setiap hari, 08.00–23.59 WIB</small></span>
 				</div>
 			</div>
 
