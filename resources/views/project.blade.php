@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+@push('page-styles')
+	<link rel="stylesheet" href="{{ asset('css/portofolio.css') }}?v=1">
+@endpush
+
+@push('page-scripts')
+	<script type="module" src="{{ asset('js/portofolio.js') }}?v=1"></script>
+@endpush
+
 @section('title', 'Portofolio & Hasil Cetak | CIHOPRINTSHOP')
 @section('description', 'Lihat galeri hasil cetak digital printing CIHOPRINTSHOP: Banner promosi, label stiker kemasan, stationery kantor, dan kemasan produk berkualitas tinggi.')
 

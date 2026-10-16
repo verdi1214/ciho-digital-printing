@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+@push('page-styles')
+	<link rel="stylesheet" href="{{ asset('css/beranda.css') }}?v=2">
+@endpush
+
+@push('page-scripts')
+	<script src="{{ asset('js/beranda.js') }}?v=1" defer></script>
+@endpush
+
 @section('content')
 	<section class="hero" id="beranda" aria-label="Beranda CIHOPRINTSHOP ">
 		<img class="hero-image" data-machine-image="{{ asset('images/ciho-printing-machine.jpg') }}" src="{{ asset('images/ciho-printing-machine.jpg') }}" alt="Mesin cetak digital CIHOPRINTSHOP" fetchpriority="high">
@@ -70,13 +78,47 @@
 			</div>
 		</div>
 		<div class="home-advantages">
-			<div class="page-wrap home-advantages-inner">
-				<p class="eyebrow"><span></span> Keunggulan CIHO</p>
-				<div class="advantage-list">
-					<div><strong>01 / Fleksibilitas</strong><span>Pilihan bahan, ukuran, dan jumlah cetak yang dapat disesuaikan dengan kebutuhan Anda.</span></div>
-					<div><strong>02 / Layanan</strong><span>Beragam kebutuhan cetak, mulai dari media promosi hingga merchandise dan kemasan produk.</span></div>
-					<div><strong>03 / Konsultasi</strong><span>Dapatkan rekomendasi spesifikasi cetak yang tepat untuk mendukung kebutuhan bisnis dan proyek Anda.</span></div>
-				</div>
+			<div class="page-wrap">
+				<section class="feature-carousel" aria-label="Keunggulan CIHO" aria-roledescription="carousel">
+					<div class="feature-carousel-slides" aria-live="polite">
+						<article class="feature-carousel-slide" role="group" aria-roledescription="slide" aria-label="1 dari 3">
+							<div class="feature-carousel-copy">
+								<p class="eyebrow"><span></span> Keunggulan CIHO / Fleksibilitas</p>
+								<h2>Cetak sesuai <span>kebutuhan.</span></h2>
+								<p>Pilihan bahan, ukuran, dan jumlah cetak dapat disesuaikan dengan kebutuhan bisnis maupun personal Anda.</p>
+								<a class="button" href="{{ route('materials') }}">Jelajahi bahan <span class="button-arrow" aria-hidden="true">→</span></a>
+							</div>
+							<div class="feature-carousel-photo" aria-hidden="true"><span>Foto banner CIHO</span></div>
+						</article>
+						<article class="feature-carousel-slide" role="group" aria-roledescription="slide" aria-label="2 dari 3" hidden>
+							<div class="feature-carousel-copy">
+								<p class="eyebrow"><span></span> Keunggulan CIHO / Layanan</p>
+								<h2>Dari ide, jadi <span>nyata.</span></h2>
+								<p>Temukan solusi cetak untuk media promosi, merchandise, stiker, label, hingga kemasan produk.</p>
+								<a class="button" href="{{ route('project') }}">Lihat hasil kami <span class="button-arrow" aria-hidden="true">→</span></a>
+							</div>
+							<div class="feature-carousel-photo" aria-hidden="true"><span>Foto banner CIHO</span></div>
+						</article>
+						<article class="feature-carousel-slide" role="group" aria-roledescription="slide" aria-label="3 dari 3" hidden>
+							<div class="feature-carousel-copy">
+								<p class="eyebrow"><span></span> Keunggulan CIHO / Konsultasi</p>
+								<h2>Didampingi dari <span>awal.</span></h2>
+								<p>Dapatkan rekomendasi bahan dan spesifikasi cetak yang tepat untuk mewujudkan proyek Anda.</p>
+								<a class="button" href="{{ route('contact') }}">Konsultasi sekarang <span class="button-arrow" aria-hidden="true">→</span></a>
+							</div>
+							<div class="feature-carousel-photo" aria-hidden="true"><span>Foto banner CIHO</span></div>
+						</article>
+					</div>
+					<div class="feature-carousel-controls" aria-label="Kontrol keunggulan CIHO">
+						<button class="feature-carousel-arrow" type="button" data-direction="previous" aria-label="Slide keunggulan sebelumnya">‹</button>
+						<div class="feature-carousel-dots" role="group" aria-label="Pilih slide keunggulan">
+							<button class="feature-carousel-dot" type="button" aria-label="Slide 1" aria-current="true"></button>
+							<button class="feature-carousel-dot" type="button" aria-label="Slide 2" aria-current="false"></button>
+							<button class="feature-carousel-dot" type="button" aria-label="Slide 3" aria-current="false"></button>
+						</div>
+						<button class="feature-carousel-arrow" type="button" data-direction="next" aria-label="Slide keunggulan berikutnya">›</button>
+					</div>
+				</section>
 			</div>
 		</div>
 	</section>

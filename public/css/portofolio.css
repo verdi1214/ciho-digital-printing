@@ -1,0 +1,26 @@
+.project-content-v2 { padding: 50px 0 84px; }
+.project-gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+.project-card-v2 { position: relative; display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--black-border); border-radius: 14px; background: var(--black-card); box-shadow: 0 6px 20px rgb(0 0 0 / 25%); transition: all .25s ease; }
+.project-card-v2:hover { transform: translateY(-5px); border-color: var(--yellow); box-shadow: 0 16px 40px rgb(0 0 0 / 50%); }
+.project-card-v2.is-featured-project { grid-column: span 2; }
+.project-thumb-box { position: relative; width: 100%; height: 260px; overflow: hidden; background: #000; }
+.project-card-v2.is-featured-project .project-thumb-box { height: 320px; }
+.project-thumb-img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
+.project-card-v2:hover .project-thumb-img { transform: scale(1.06); }
+.project-category-tag { position: absolute; top: 14px; left: 14px; padding: 5px 12px; border: 1px solid rgb(255 255 255 / 15%); border-radius: 999px; background: rgb(9 10 13 / 85%); backdrop-filter: blur(8px); color: var(--yellow); font-size: 10.5px; font-weight: 800; letter-spacing: .8px; text-transform: uppercase; }
+.project-body { display: flex; flex-grow: 1; flex-direction: column; padding: 22px 24px 24px; }
+.project-body h3 { margin: 0 0 8px; color: #fff; font: 700 21px/1.25 var(--font-display); }
+.project-body p { flex-grow: 1; margin: 0 0 16px; color: var(--text-secondary); font-size: 13.5px; line-height: 1.6; }
+.project-meta-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 14px; border-top: 1px solid rgb(255 255 255 / 8%); }
+.project-meta-pill { display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; border: 1px solid var(--black-border); border-radius: 5px; background: var(--black-surface); color: #e1e4ea; font-size: 11.5px; font-weight: 600; }
+.project-meta-pill strong { color: var(--yellow); font-weight: 700; }
+
+@media (max-width: 1024px) {
+	.project-gallery-grid { grid-template-columns: repeat(2, 1fr); }
+	.project-card-v2.is-featured-project { grid-column: span 2; }
+}
+
+@media (max-width: 768px) {
+	.project-gallery-grid { grid-template-columns: 1fr; }
+	.project-card-v2.is-featured-project { grid-column: span 1; }
+}

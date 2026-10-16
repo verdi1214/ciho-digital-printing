@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+@push('page-styles')
+	<link rel="stylesheet" href="{{ asset('css/lokasi.css') }}?v=1">
+@endpush
+
+@push('page-scripts')
+	<script src="{{ asset('js/lokasi.js') }}?v=1" defer></script>
+@endpush
+
 @section('title', 'Lokasi & Workshop Produksi | CIHOPRINTSHOP Jakarta')
 @section('description', 'Kunjungi workshop CIHOPRINTSHOP di Jakarta untuk konsultasi bahan cetak, pengecekan sampel fisik, dan pengambilan pesanan secara langsung.')
 

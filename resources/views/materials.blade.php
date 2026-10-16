@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+@push('page-styles')
+	<link rel="stylesheet" href="{{ asset('css/bahan.css') }}?v=1">
+@endpush
+
+@push('page-scripts')
+	<script type="module" src="{{ asset('js/bahan.js') }}?v=1"></script>
+@endpush
+
 @section('title', 'Katalog Bahan Cetak & Finishing | CIHOPRINTSHOP')
 @section('description', 'Katalog material digital printing berkualitas di CIHOPRINTSHOP: Flexi Frontlite, Albatros Matte, Luster Photo, Stiker Vinyl, Art Carton, dan pilihan finishing protektif.')
 

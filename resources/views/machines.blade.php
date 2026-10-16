@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@push('page-styles')
+	<link rel="stylesheet" href="{{ asset('css/mesin.css') }}?v=1">
+@endpush
+
 @section('title', 'Mesin Kami')
 @section('description', 'Kenali mesin digital printing format lebar yang digunakan CIHOPRINTSHOP.')
 

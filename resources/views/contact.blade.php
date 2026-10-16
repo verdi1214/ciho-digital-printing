@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@push('page-styles')
+	<link rel="stylesheet" href="{{ asset('css/kontak.css') }}?v=1">
+@endpush
+
 @section('title', 'Hubungi Kami | Konsultasi & Pemesanan')
 @section('description', 'Hubungi tim profesional CIHOPRINTSHOP untuk konsultasi spesifikasi bahan, penawaran harga, dan layanan digital printing.')
 
