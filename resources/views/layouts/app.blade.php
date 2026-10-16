@@ -21,15 +21,18 @@
 	<header class="site-header">
 		<div class="header-inner">
 			<a class="brand" href="{{ route('home') }}" aria-label="CIHOPRINTSHOP, beranda">
-				<img class="brand-logo" src="{{ asset('images/ciho-logo.webp') }}?v=2" alt="CIHOPRINTSHOP Digital Printing" width="80" height="80">
-				<img class="brand-wordmark" src="{{ asset('images/ciho-wordmark.png') }}?v=1" alt="" width="900" height="168">
-			</a>
+              <img class="brand-wordmark"
+                src="{{ asset('images/ciho-wordmark.png') }}?v=1"
+                 alt="CIHOPRINTSHOP"
+                 width="900"
+                 height="168">
+            </a>
 			<nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
 				<a href="{{ route('home') }}" @class(['is-active' => request()->routeIs('home')])>Beranda</a>
 				<a href="{{ route('about') }}" @class(['is-active' => request()->routeIs('about')])>Tentang</a>
 				<a href="{{ route('materials') }}" @class(['is-active' => request()->routeIs('materials')])>Bahan</a>
-				<a href="{{ route('machines') }}" @class(['is-active' => request()->routeIs('machines')])>Mesin Kami</a>
-				<a href="{{ route('project') }}" @class(['is-active' => request()->routeIs('project')])>Project</a>
+				<a href="{{ route('machines') }}" @class(['is-active' => request()->routeIs('machines')])>Mesin</a>
+				<a href="{{ route('project') }}" @class(['is-active' => request()->routeIs('project')])>Portofolio</a>
 				<a href="{{ route('location') }}" @class(['is-active' => request()->routeIs('location')])>Lokasi</a>
 			</nav>
 			<a class="button header-cta" href="{{ route('contact') }}">Hubungi Kami <span class="button-arrow" aria-hidden="true">→</span></a>

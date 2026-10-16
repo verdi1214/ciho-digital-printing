@@ -12,8 +12,8 @@
 					<div class="badge-pill badge-pill-red">
 						<span class="status-indicator"></span> SENTRA PRODUKSI & KANTOR RESMI
 					</div>
-					<h1>Kunjungi Workshop Produksi<br><span class="accent">CIHOPRINTSHOP Jakarta.</span></h1>
-					<p class="page-lead">Datang langsung untuk melihat ratusan sampel material fisik, berkonsultasi mengenai teknis file bersama operator cetak kami, atau mengambil pesanan yang telah selesai diproduksi.</p>
+					<h1>Kunjungi Workshop<br><span class="accent">CIHOPRINTSHOP Jakarta.</span></h1>
+					<p class="page-lead">Kunjungi workshop CIHOPRINTSHOP Jakarta untuk mengenal material cetak, berkonsultasi mengenai kebutuhan produksi, dan melihat lebih dekat proses pengerjaan pesanan Anda.</p>
 				</div>
 
 				<!-- Stats Strip -->
@@ -71,7 +71,7 @@
 					<div class="badge-pill">ALAMAT WORKSHOP</div>
 					<h3 class="workshop-name">CIHOPRINTSHOP Digital Printing</h3>
 					<p class="workshop-address" id="workshop-full-address">Jl. Radio Dalam Raya No.F3A, RT.5/RW.4, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12140</p>
-					
+
 					<button class="copy-address-btn" id="copy-address-trigger" type="button" aria-label="Salin alamat workshop">
 						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
 						<span id="copy-btn-label">Salin Alamat Lengkap</span>
@@ -95,21 +95,13 @@
 						</div>
 						<div class="info-row">
 							<span class="info-label">Layanan di Tempat</span>
-							<strong class="info-value">Cek Sampel, Konsultasi & Pick-Up</strong>
+							<strong class="info-value">Konsultasi, Pemesanan, dan Produksi</strong>
 						</div>
 						<div class="info-row">
-							<span class="info-label">Hotline Admin</span>
+							<span class="info-label">Hubungi Admin</span>
 							<strong class="info-value">0813-9000-1217</strong>
 						</div>
 					</div>
-				</div>
-
-				<!-- Facility Badges -->
-				<div class="facilities-row">
-					<span class="facility-tag">🚗 Parkir Mobil & Motor</span>
-					<span class="facility-tag">📦 Pick-Up Cepat</span>
-					<span class="facility-tag">📑 Cek Sampel Fisik</span>
-					<span class="facility-tag">💬 Operator Siap Bantu</span>
 				</div>
 
 				<!-- Direct WhatsApp Contact Button -->

@@ -12,8 +12,8 @@
 					<div class="badge-pill badge-pill-yellow">
 						<span class="status-indicator"></span> BUKTI NYATA KUALITAS PRODUKSI
 					</div>
-					<h1>Portofolio & Hasil Cetak<br><span class="accent">Presisi untuk Setiap Industri.</span></h1>
-					<p class="page-lead">Jelajahi berbagai proyek nyata yang telah kami selesaikan untuk brand UMKM, korporasi, perbankan, restoran, hingga perorangan di Jakarta dan seluruh Indonesia.</p>
+					<h1>Portofolio & Hasil Cetak<br><Hasil class="accent">Kualitas Nyata, <br>Hasil Istimewa.</span></h1>
+					<p class="page-lead">Jelajahi berbagai hasil produksi CIHOPRINTSHOP, mulai dari media promosi hingga kebutuhan cetak bisnis. Setiap proyek dikerjakan dengan presisi, material berkualitas, dan perhatian terhadap detail.</p>
 				</div>
 
 				<!-- Stats Strip -->

@@ -49,7 +49,7 @@
 					<p class="eyebrow"><span></span> Layanan utama</p>
 					<h2>Cetak untuk banyak<br><span class="accent">kebutuhan.</span></h2>
 				</div>
-				<p class="home-section-lead">Dari materi promosi hingga kemasan produk, pilih layanan yang sesuai dengan ide dan kebutuhan Anda.</p>
+				<p class="home-section-lead">Dari media promosi hingga kemasan produk, temukan beragam solusi digital printing untuk mendukung kebutuhan bisnis, acara, dan personal Anda.</p>
 			</div>
 			<div class="home-service-list">
 				<article class="home-service-item">
@@ -73,9 +73,9 @@
 			<div class="page-wrap home-advantages-inner">
 				<p class="eyebrow"><span></span> Keunggulan CIHO</p>
 				<div class="advantage-list">
-					<div><strong>01</strong><span>Bisa konsultasi jenis bahan, ukuran, dan jumlah cetak.</span></div>
-					<div><strong>02</strong><span>Melayani kebutuhan promosi, produk, acara, dan personal.</span></div>
-					<div><strong>03</strong><span>Pilihan layanan cetak dalam satu tempat.</span></div>
+					<div><strong>01 / Fleksibilitas</strong><span>Pilihan bahan, ukuran, dan jumlah cetak yang dapat disesuaikan dengan kebutuhan Anda.</span></div>
+					<div><strong>02 / Layanan</strong><span>Beragam kebutuhan cetak, mulai dari media promosi hingga merchandise dan kemasan produk.</span></div>
+					<div><strong>03 / Konsultasi</strong><span>Dapatkan rekomendasi spesifikasi cetak yang tepat untuk mendukung kebutuhan bisnis dan proyek Anda.</span></div>
 				</div>
 			</div>
 		</div>
@@ -86,29 +86,29 @@
 			<div class="home-section-heading">
 				<div>
 					<p class="eyebrow"><span></span> Produk populer</p>
-					<h2>Yang sering jadi<br><span class="accent">pilihan.</span></h2>
+					<h2>Produk favorit<br><span class="accent">Ide tanpa batas.</span></h2>
 				</div>
 				<a class="text-arrow" href="{{ route('project') }}">Jelajahi project <span aria-hidden="true">→</span></a>
 			</div>
 			<div class="popular-grid">
 				<a class="popular-product" href="{{ route('contact') }}">
 					<img src="{{ asset('images/produk-kaos-custom.png') }}" alt="Kaos custom hasil cetak CIHOPRINTSHOP" loading="lazy">
-					<span>01 / PROMOSI</span><h3>Poster & flyer</h3><p>Materi promosi untuk brand dan acara.</p>
+					<span>01 / PROMOSI</span><h3>Kaos & Jersey Custom</h3><p>Pakaian custom dengan desain menarik untuk kebutuhan acara, komunitas, dan promosi.</p>
 				</a>
 				<a class="popular-product" href="{{ route('contact') }}">
 					<img class="popular-product-medal" src="{{ asset('images/produk-medali.png') }}" alt="Medali custom untuk acara dan perlombaan" loading="lazy">
-					<span>02 / MERCHANDISE</span><h3>Merchandise</h3><p>Produk custom untuk acara dan kebutuhan brand.</p>
+					<span>02 / MERCHANDISE</span><h3>Medali & Lanyard</h3><p>Aksesori custom untuk perlombaan, kegiatan sekolah, dan berbagai acara spesial.</p>
 				</a>
 				<a class="popular-product" href="{{ route('contact') }}">
 					<img src="{{ asset('images/produk-plakat-tumbler.png') }}" alt="Plakat penghargaan dan tumbler custom" loading="lazy">
-					<span>03 / STATIONERY</span><h3>Notebook</h3><p>Stationery untuk hadiah atau kebutuhan kantor.</p>
+					<span>03 / STATIONERY</span><h3>Plakat & Tumbler</h3><p>Pilihan souvenir dan penghargaan untuk kenang-kenangan, hadiah, maupun apresiasi acara.</p>
 				</a>
 				<a class="popular-product" href="{{ route('contact') }}">
 					<img src="{{ asset('images/produk-powerbank-custom.png') }}" alt="Power bank custom dengan hasil cetak desain" loading="lazy">
-					<span>04 / PRODUK</span><h3>Label & kemasan</h3><p>Detail cetak untuk melengkapi tampilan produk.</p>
+					<span>04 / PRODUK</span><h3>Produk Custom</h3><p>Produk dengan desain dan identitas visual khusus untuk kebutuhan personal maupun bisnis.</p>
 				</a>
 			</div>
-			<div class="products-cta"><span>Memerlukan spesifikasi cetak khusus atau pemesanan skala besar?</span><a class="button" href="{{ route('contact') }}">Konsultasi Pemesanan <span class="button-arrow" aria-hidden="true">→</span></a></div>
+			<div class="products-cta"><span>Masih punya pertanyaan seputar kebutuhan cetak Anda? Mari konsultasikan bersama CIHO. </span><a class="button" href="{{ route('contact') }}">Konsultasi Pemesanan <span class="button-arrow" aria-hidden="true">→</span></a></div>
 		</div>
 	</section>
 @endsection
