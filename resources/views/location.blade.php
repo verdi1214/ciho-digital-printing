@@ -27,7 +27,7 @@
 				<!-- Stats Strip -->
 				<div class="stats-strip">
 					<div class="stat-item">
-						<span class="stat-val">08.00<span class="stat-accent">–</span>23.59</span>
+						<span class="stat-val">08.00<span class="stat-accent">–</span>23.59 WIB</span>
 						<span class="stat-label">Jam Operasional (Setiap Hari)</span>
 					</div>
 					<div class="stat-item">
@@ -77,7 +77,7 @@
 				<!-- Address Box -->
 				<div class="location-address-block">
 					<div class="badge-pill">ALAMAT WORKSHOP</div>
-					<h3 class="workshop-name">CIHOPRINTSHOP Digital Printing</h3>
+					<h3 class="workshop-name">CIHOPRINTSHOP Jakarta Digital Printing</h3>
 					<p class="workshop-address" id="workshop-full-address">Jl. Radio Dalam Raya No.F3A, RT.5/RW.4, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12140</p>
 
 					<button class="copy-address-btn" id="copy-address-trigger" type="button" aria-label="Salin alamat workshop">
