@@ -1,7 +1,11 @@
 @extends('layouts.app')
 
 @push('page-styles')
-	<link rel="stylesheet" href="{{ asset('css/price-list.css') }}?v=5">
+	<link rel="stylesheet" href="{{ asset('css/price-list.css') }}?v=8">
+@endpush
+
+@push('page-scripts')
+	<script src="{{ asset('js/price-list.js') }}?v=1" defer></script>
 @endpush
 
 @section('title', 'Price List | CIHOPRINTSHOP')
@@ -10,14 +14,40 @@
 @section('content')
 	<section class="content-page price-list-page">
 		<div class="page-wrap price-list-content">
-			<div class="price-list-poster">
+			<div class="price-list-board">
+				<div class="price-list-stripe" aria-hidden="true"></div>
 				<header class="price-list-hero">
-					<p class="price-list-brand">Ciho Jakarta Digital Printing</p>
+					<p class="price-list-kicker">CIHO JAKARTA DIGITAL PRINTING</p>
 					<h1 class="price-list-title">PRICE LIST</h1>
 					<p class="price-list-lead">Untuk pemesanan dan konfirmasi harga terbaru, silakan hubungi admin CIHOPRINTSHOP.</p>
+					<p class="price-list-starting-price">Mulai dari <strong>Rp 1.000</strong> <span>· Siap cetak hari ini</span></p>
 				</header>
-				<div class="price-list-grid">
-				<article class="price-list-card">
+
+				<div class="price-list-panel">
+				<div class="price-list-panel-heading">
+					<div>
+						<p class="price-list-panel-kicker">DAFTAR LAYANAN</p>
+						<h2>Pilih yang kamu butuhkan</h2>
+					</div>
+					<label class="price-list-search">
+						<span class="sr-only">Cari produk</span>
+						<input type="search" data-price-search aria-controls="price-list-grid" placeholder="Cari produk..." autocomplete="off">
+						<span aria-hidden="true">⌕</span>
+					</label>
+				</div>
+
+				<div class="price-list-filters" role="group" aria-label="Filter kategori harga">
+					<button type="button" data-price-filter="all" aria-pressed="true">Semua</button>
+					<button type="button" data-price-filter="paper" aria-pressed="false">Print Kertas</button>
+					<button type="button" data-price-filter="sticker" aria-pressed="false">Stiker</button>
+					<button type="button" data-price-filter="banner" aria-pressed="false">Banner</button>
+					<button type="button" data-price-filter="merchandise" aria-pressed="false">Merchandise</button>
+					<button type="button" data-price-filter="identity" aria-pressed="false">Kartu &amp; ID</button>
+					<button type="button" data-price-filter="dtf-uv" aria-pressed="false">DTF &amp; UV</button>
+				</div>
+
+				<div class="price-list-grid" id="price-list-grid" data-price-grid>
+				<article class="price-list-card" data-price-category="paper">
 					<h3>HVS</h3>
 					<table><tbody>
 						<tr><th>Fotokopi</th><td>Rp 1.000</td></tr>
@@ -28,7 +58,7 @@
 					</tbody></table>
 				</article>
 
-				<article class="price-list-card">
+				<article class="price-list-card" data-price-category="paper">
 					<h3>Art Paper &amp; Carton</h3>
 					<table><tbody>
 						<tr><th>Art Paper 150 gr - 1 sisi</th><td>Rp 10.000</td></tr>
@@ -43,7 +73,7 @@
 					</tbody></table>
 				</article>
 
-				<article class="price-list-card">
+				<article class="price-list-card" data-price-category="paper">
 					<h3>Fancy Paper</h3>
 					<table><tbody>
 						<tr><th>Concorde 80 gr</th><td>Rp 12.000</td></tr>
@@ -55,7 +85,7 @@
 					</tbody></table>
 				</article>
 
-				<article class="price-list-card">
+				<article class="price-list-card" data-price-category="sticker">
 					<h3>Sticker A3</h3>
 					<table><tbody>
 						<tr><th>Sticker Vinyl Glossy</th><td>Rp 17.500</td></tr>
@@ -71,7 +101,7 @@
 					</tbody></table>
 				</article>
 
-				<article class="price-list-card">
+				<article class="price-list-card" data-price-category="banner">
 					<h3>Spanduk &amp; Banner</h3>
 					<table><tbody>
 						<tr><th>Flexy Frontlite 280 gr</th><td>Rp 40.000/m</td></tr>
@@ -90,7 +120,7 @@
 					</tbody></table>
 				</article>
 
-				<article class="price-list-card">
+				<article class="price-list-card" data-price-category="sticker">
 					<h3>Indoor</h3>
 					<table><tbody>
 						<tr><th>Sticker Vinyl Supergloss</th><td>Rp 125.000/m</td></tr>
@@ -104,7 +134,7 @@
 					</tbody></table>
 				</article>
 
-				<article class="price-list-card">
+				<article class="price-list-card" data-price-category="sticker">
 					<h3>Sticker Polyfoam / Inpraboard</h3>
 					<table><tbody>
 						<tr><th>A0 Polyfoam</th><td>Rp 175.000</td></tr>
@@ -119,7 +149,7 @@
 					</tbody></table>
 				</article>
 
-				<article class="price-list-card">
+				<article class="price-list-card" data-price-category="dtf-uv">
 					<h3>Direct to Film (DTF)</h3>
 					<table><tbody>
 						<tr><th>Print A3 - 29,7 x 42 cm</th><td>Rp 90.000</td></tr>
@@ -128,7 +158,7 @@
 					</tbody></table>
 				</article>
 
-				<article class="price-list-card">
+				<article class="price-list-card" data-price-category="identity">
 					<h3>ID Card &amp; E-Money</h3>
 					<table><tbody>
 						<tr><th>PVC - Print UV, 1 sisi</th><td>Rp 20.000</td></tr>
@@ -142,14 +172,14 @@
 					</tbody></table>
 				</article>
 
-				<article class="price-list-card">
+				<article class="price-list-card" data-price-category="dtf-uv">
 					<h3>Ultra Violet (UV)</h3>
 					<table><tbody>
 						<tr><th>Print per cm</th><td>Rp 1.000</td></tr>
 					</tbody></table>
 				</article>
 
-				<article class="price-list-card">
+				<article class="price-list-card" data-price-category="identity">
 					<h3>Kartu Nama <span>(1 box / 100 pcs)</span></h3>
 					<table><tbody>
 						<tr><th>Linen 230 gr - 1 sisi</th><td>Rp 100.000</td></tr>
@@ -163,7 +193,7 @@
 					</tbody></table>
 				</article>
 
-				<article class="price-list-card">
+				<article class="price-list-card" data-price-category="paper">
 					<h3>Brosur / Leaflet / Flyer</h3>
 					<table><tbody>
 						<tr><th>A4, Art Paper 150 gr - 1 sisi / 1 rim</th><td>Konfirmasi admin</td></tr>
@@ -173,14 +203,14 @@
 					</tbody></table>
 				</article>
 
-				<article class="price-list-card">
+				<article class="price-list-card" data-price-category="merchandise">
 					<h3>Mug Custom</h3>
 					<table><tbody>
 						<tr><th>Putih polos, bebas desain</th><td>Rp 35.000</td></tr>
 					</tbody></table>
 				</article>
 
-				<article class="price-list-card">
+				<article class="price-list-card" data-price-category="merchandise">
 					<h3>Lanyard Custom</h3>
 					<table><tbody>
 						<tr><th>Print lanyard 1 sisi</th><td>Rp 20.000</td></tr>
@@ -189,7 +219,7 @@
 					</tbody></table>
 				</article>
 
-				<article class="price-list-card">
+				<article class="price-list-card" data-price-category="merchandise">
 					<h3>Handuk Bordir</h3>
 					<table><tbody>
 						<tr><th>Ukuran 30 x 70 cm</th><td>Rp 100.000</td></tr>
@@ -197,7 +227,7 @@
 					</tbody></table>
 				</article>
 
-				<article class="price-list-card">
+				<article class="price-list-card" data-price-category="merchandise">
 					<h3>Kaos Polos <span>(termasuk print DTF A4)</span></h3>
 					<table><tbody>
 						<tr><th>30s L pendek - S / M / L / XL</th><td>Rp 115.000</td></tr>
@@ -213,7 +243,7 @@
 					</tbody></table>
 				</article>
 
-				<article class="price-list-card">
+				<article class="price-list-card" data-price-category="merchandise">
 					<h3>Paper Bag &amp; Gantungan Kunci</h3>
 					<table><tbody>
 						<tr><th>Paper bag custom</th><td>Mulai Rp 35.000</td></tr>
@@ -221,6 +251,8 @@
 					</tbody></table>
 					<p>Harga menyesuaikan ukuran dan jumlah pesanan.</p>
 				</article>
+				</div>
+				<p class="price-list-empty" data-price-empty role="status" aria-live="polite" hidden>Tidak ada produk yang cocok.</p>
 				</div>
 			</div>
 
