@@ -9,9 +9,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="{{ asset('css/ciho.css') }}?v=76">
+	<link rel="stylesheet" href="{{ asset('css/ciho.css') }}?v=81">
 	@stack('page-styles')
-	<link rel="icon" type="image/webp" href="{{ asset('images/ciho-logo.webp') }}?v=2">
+	<link rel="icon" type="image/png" href="{{ asset('images/ciho-logo-color.png') }}?v=1">
 </head>
 <body>
 	<svg class="visual-effects" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -22,18 +22,24 @@
 	<header class="site-header">
 		<div class="header-inner">
 			<a class="brand" href="{{ route('home') }}" aria-label="CIHOPRINTSHOP, beranda">
-              <img class="brand-wordmark"
-                src="{{ asset('images/ciho-wordmark.png') }}?v=1"
-                 alt="CIHOPRINTSHOP"
-                 width="900"
-                 height="168">
-            </a>
+				<img class="brand-wordmark brand-wordmark-light"
+					src="{{ asset('images/ciho-wordmark-footer.png') }}?v=1"
+					alt=""
+					width="4228"
+					height="768">
+				<img class="brand-wordmark brand-wordmark-color"
+					src="{{ asset('images/ciho-wordmark-color.png') }}?v=1"
+					alt=""
+					width="4228"
+					height="768">
+			</a>
 			<nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
 				<a href="{{ route('home') }}" @class(['is-active' => request()->routeIs('home')])>Beranda</a>
 				<a href="{{ route('about') }}" @class(['is-active' => request()->routeIs('about')])>Tentang</a>
 				<a href="{{ route('materials') }}" @class(['is-active' => request()->routeIs('materials')])>Bahan</a>
 				<a href="{{ route('machines') }}" @class(['is-active' => request()->routeIs('machines')])>Mesin</a>
 				<a href="{{ route('project') }}" @class(['is-active' => request()->routeIs('project')])>Produk</a>
+				<a href="{{ route('price-list') }}" @class(['is-active' => request()->routeIs('price-list')])>Price List</a>
 				<a href="{{ route('location') }}" @class(['is-active' => request()->routeIs('location')])>Lokasi</a>
 			</nav>
 			<a class="button header-cta" href="{{ route('contact') }}">Hubungi Kami <span class="button-arrow" aria-hidden="true">→</span></a>
@@ -52,8 +58,7 @@
 			<div class="footer-main">
 				<div class="footer-about">
 					<a class="brand footer-brand" href="{{ route('home') }}" aria-label="CIHOPRINTSHOP, beranda">
-						<img class="brand-logo" src="{{ asset('images/ciho-logo.webp') }}?v=2" alt="CIHOPRINTSHOP Digital Printing" width="80" height="80">
-						<img class="brand-wordmark" src="{{ asset('images/ciho-wordmark.png') }}?v=1" alt="" width="900" height="168">
+						<img class="brand-wordmark" src="{{ asset('images/ciho-wordmark-footer.png') }}?v=1" alt="CIHOPRINTSHOP Digital Printing" width="4228" height="768">
 					</a>
 					<p class="footer-tagline">Ide kamu, kami cetak jadi nyata.</p>
 					<p class="footer-description">Partner digital printing untuk kebutuhan promosi, produk, acara, dan bisnis Anda.</p>
@@ -79,6 +84,7 @@
 					<a href="{{ route('materials') }}">Katalog bahan</a>
 					<a href="{{ route('machines') }}">Mesin produksi</a>
 					<a href="{{ route('project') }}">Project &amp; portofolio</a>
+					<a href="{{ route('price-list') }}">Price list</a>
 					<a href="{{ route('location') }}">Lokasi workshop</a>
 				</nav>
 

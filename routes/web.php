@@ -7,6 +7,7 @@ Route::view('/about', 'about')->name('about');
 Route::view('/materials', 'materials')->name('materials');
 Route::view('/machines', 'machines')->name('machines');
 Route::view('/project', 'project')->name('project');
+Route::view('/price-list', 'price-list')->name('price-list');
 Route::view('/location', 'location')->name('location');
 Route::view('/contact', 'contact')->name('contact');
 

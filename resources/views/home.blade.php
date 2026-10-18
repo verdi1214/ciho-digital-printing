@@ -1,29 +1,29 @@
 @extends('layouts.app')
 
 @push('page-styles')
-	<link rel="stylesheet" href="{{ asset('css/beranda.css') }}?v=2">
+	<link rel="stylesheet" href="{{ asset('css/beranda.css') }}?v=13">
 @endpush
 
 @push('page-scripts')
-	<script src="{{ asset('js/beranda.js') }}?v=1" defer></script>
+	<script src="{{ asset('js/beranda.js') }}?v=6" defer></script>
 @endpush
 
 @section('content')
 	<section class="hero" id="beranda" aria-label="Beranda CIHOPRINTSHOP ">
-		<img class="hero-image" data-machine-image="{{ asset('images/ciho-printing-machine.jpg') }}" src="{{ asset('images/ciho-printing-machine.jpg') }}" alt="Mesin cetak digital CIHOPRINTSHOP" fetchpriority="high">
+		<img class="hero-image" src="{{ asset('images/ciho-printing-machine.jpg') }}" data-hero-image="{{ asset('images/ciho-printing-machine.jpg') }}" data-machine-image="{{ asset('images/mesin-nocai-flatbed.png') }}" data-shirt-image="{{ asset('images/hero-produk-kaos.png') }}" alt="Mesin digital printing CIHOPRINTSHOP" fetchpriority="high">
 		<div class="hero-shade" aria-hidden="true"></div>
 		<div class="hero-inner">
 			<div class="hero-copy" aria-live="polite">
-				<p class="eyebrow" id="slide-eyebrow">Solusi digital printing terpercaya</p>
-				<h1 id="slide-title"><span id="slide-title-main">CIHO</span><br><span class="accent" id="slide-title-accent">Digital Printing</span></h1>
-				<p class="hero-description" id="slide-description" hidden></p>
+				<p class="eyebrow" id="slide-eyebrow">Produksi digital printing</p>
+				<h1 id="slide-title"><span id="slide-title-main">Hasil cetak</span><br><span class="accent" id="slide-title-accent">berkualitas.</span></h1>
+				<p class="hero-description" id="slide-description">Proses cetak profesional untuk kebutuhan promosi, bisnis, dan personal.</p>
 				<div class="hero-services" id="slide-services" hidden>
 					<div><span>01</span><strong>Digital Printing</strong></div>
 					<div><span>02</span><strong>Large Format</strong></div>
 					<div><span>03</span><strong>Stiker &amp; Kemasan</strong></div>
 				</div>
 				<div class="hero-actions">
-					<a class="button" id="primary-action" data-about-url="{{ route('about') }}" data-contact-url="{{ route('contact') }}" href="{{ route('about') }}"><span id="primary-action-label">Tentang Kami</span> <span class="button-arrow" aria-hidden="true">→</span></a>
+					<a class="button" id="primary-action" data-machines-url="{{ route('machines') }}" href="{{ route('machines') }}"><span id="primary-action-label">Lihat Mesin</span> <span class="button-arrow" aria-hidden="true">→</span></a>
 					<a class="button-secondary" href="{{ route('project') }}">Lihat Hasil Kami <span class="button-arrow" aria-hidden="true">→</span></a>
 				</div>
 				<div class="slider-controls" aria-label="Kontrol slide beranda">
@@ -79,46 +79,20 @@
 		</div>
 		<div class="home-advantages">
 			<div class="page-wrap">
-				<section class="feature-carousel" aria-label="Keunggulan CIHO" aria-roledescription="carousel">
-					<div class="feature-carousel-slides" aria-live="polite">
-						<article class="feature-carousel-slide" role="group" aria-roledescription="slide" aria-label="1 dari 3">
-							<div class="feature-carousel-copy">
-								<p class="eyebrow"><span></span> Keunggulan CIHO / Fleksibilitas</p>
-								<h2>Cetak sesuai <span>kebutuhan.</span></h2>
-								<p>Pilihan bahan, ukuran, dan jumlah cetak dapat disesuaikan dengan kebutuhan bisnis maupun personal Anda.</p>
-								<a class="button" href="{{ route('materials') }}">Jelajahi bahan <span class="button-arrow" aria-hidden="true">→</span></a>
-							</div>
-							<div class="feature-carousel-photo" aria-hidden="true"><span>Foto banner CIHO</span></div>
-						</article>
-						<article class="feature-carousel-slide" role="group" aria-roledescription="slide" aria-label="2 dari 3" hidden>
-							<div class="feature-carousel-copy">
-								<p class="eyebrow"><span></span> Keunggulan CIHO / Layanan</p>
-								<h2>Dari ide, jadi <span>nyata.</span></h2>
-								<p>Temukan solusi cetak untuk media promosi, merchandise, stiker, label, hingga kemasan produk.</p>
-								<a class="button" href="{{ route('project') }}">Lihat hasil kami <span class="button-arrow" aria-hidden="true">→</span></a>
-							</div>
-							<div class="feature-carousel-photo" aria-hidden="true"><span>Foto banner CIHO</span></div>
-						</article>
-						<article class="feature-carousel-slide" role="group" aria-roledescription="slide" aria-label="3 dari 3" hidden>
-							<div class="feature-carousel-copy">
-								<p class="eyebrow"><span></span> Keunggulan CIHO / Konsultasi</p>
-								<h2>Didampingi dari <span>awal.</span></h2>
-								<p>Dapatkan rekomendasi bahan dan spesifikasi cetak yang tepat untuk mewujudkan proyek Anda.</p>
-								<a class="button" href="{{ route('contact') }}">Konsultasi sekarang <span class="button-arrow" aria-hidden="true">→</span></a>
-							</div>
-							<div class="feature-carousel-photo" aria-hidden="true"><span>Foto banner CIHO</span></div>
-						</article>
-					</div>
-					<div class="feature-carousel-controls" aria-label="Kontrol keunggulan CIHO">
-						<button class="feature-carousel-arrow" type="button" data-direction="previous" aria-label="Slide keunggulan sebelumnya">‹</button>
-						<div class="feature-carousel-dots" role="group" aria-label="Pilih slide keunggulan">
-							<button class="feature-carousel-dot" type="button" aria-label="Slide 1" aria-current="true"></button>
-							<button class="feature-carousel-dot" type="button" aria-label="Slide 2" aria-current="false"></button>
-							<button class="feature-carousel-dot" type="button" aria-label="Slide 3" aria-current="false"></button>
+				<div class="feature-carousel" data-banner-carousel role="group" aria-roledescription="carousel" aria-label="Galeri banner CIHO">
+					<img class="feature-carousel-image is-active" data-banner-slide src="{{ asset('images/ciho-promo-banner.png') }}" alt="Banner promo CIHO: printing, design, dan branding" aria-hidden="false">
+					<img class="feature-carousel-image" data-banner-slide src="{{ asset('images/hero-produk-kaos.png') }}" alt="Kaos custom hasil cetak CIHOPRINTSHOP" aria-hidden="true">
+					<img class="feature-carousel-image" data-banner-slide src="{{ asset('images/produk-plakat-tumbler.png') }}" alt="Plakat dan tumbler custom hasil cetak CIHOPRINTSHOP" aria-hidden="true">
+					<div class="feature-carousel-controls" role="group" aria-label="Kontrol galeri banner">
+						<button class="feature-carousel-arrow" type="button" data-banner-direction="previous" aria-label="Gambar sebelumnya">‹</button>
+						<div class="feature-carousel-dots" role="group" aria-label="Pilih gambar banner">
+							<button class="feature-carousel-dot" type="button" data-banner-index="0" aria-label="Tampilkan gambar 1" aria-current="true"></button>
+							<button class="feature-carousel-dot" type="button" data-banner-index="1" aria-label="Tampilkan gambar 2" aria-current="false"></button>
+							<button class="feature-carousel-dot" type="button" data-banner-index="2" aria-label="Tampilkan gambar 3" aria-current="false"></button>
 						</div>
-						<button class="feature-carousel-arrow" type="button" data-direction="next" aria-label="Slide keunggulan berikutnya">›</button>
+						<button class="feature-carousel-arrow" type="button" data-banner-direction="next" aria-label="Gambar berikutnya">›</button>
 					</div>
-				</section>
+				</div>
 			</div>
 		</div>
 	</section>

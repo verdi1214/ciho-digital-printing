@@ -1,39 +1,41 @@
-const machineImageUrl = document.querySelector('.hero-image')?.dataset.machineImage;
-const aboutUrl = document.querySelector('#primary-action')?.dataset.aboutUrl ?? '#';
-const contactUrl = document.querySelector('#primary-action')?.dataset.contactUrl ?? '#';
+const heroImageElement = document.querySelector('.hero-image');
+const firstHeroImageUrl = heroImageElement?.dataset.heroImage;
+const secondHeroImageUrl = heroImageElement?.dataset.machineImage;
+const thirdHeroImageUrl = heroImageElement?.dataset.shirtImage;
+const machinesUrl = document.querySelector('#primary-action')?.dataset.machinesUrl ?? '#';
 const slides = [
 	{
-		image: machineImageUrl,
-		alt: 'Mesin cetak digital CIHOPRINTSHOP',
-		eyebrow: 'Solusi digital printing terpercaya',
-		titleMain: 'CIHO',
-		titleAccent: 'Digital Printing',
-		description: '',
+		image: firstHeroImageUrl,
+		alt: 'Mesin digital printing CIHOPRINTSHOP',
+		eyebrow: 'Produksi digital printing',
+		titleMain: 'Hasil cetak',
+		titleAccent: 'berkualitas.',
+		description: 'Proses cetak profesional untuk kebutuhan promosi, bisnis, dan personal.',
 		services: [],
-		actionLabel: 'Tentang Kami',
-		actionUrl: aboutUrl
+		actionLabel: 'Lihat Mesin',
+		actionUrl: machinesUrl
 	},
 	{
-		image: '/images/hero-produk-kaos.png',
-		alt: 'Kaos custom dan pakaian hasil cetak CIHOPRINTSHOP',
-		eyebrow: 'Layanan utama',
-		titleMain: 'Cetak untuk banyak',
-		titleAccent: 'kebutuhan.',
-		description: 'Banner, stiker, kemasan, hingga materi promosi untuk usaha dan acara.',
-		services: ['Digital Printing', 'Large Format', 'Stiker & Kemasan'],
-		actionLabel: 'Lihat Layanan',
-		actionUrl: '#layanan-utama'
+		image: secondHeroImageUrl,
+		alt: 'Mesin flatbed untuk proses cetak digital di CIHOPRINTSHOP',
+		eyebrow: 'Teknologi cetak',
+		titleMain: 'Cetak presisi',
+		titleAccent: 'untuk ide besar.',
+		description: 'Dari media promosi hingga produk custom, setiap detail dikerjakan dengan teliti.',
+		services: [],
+		actionLabel: 'Lihat Mesin',
+		actionUrl: machinesUrl
 	},
 	{
-		image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=2200&q=88',
-		alt: 'Produk cetak dan alat tulis dengan desain berwarna',
-		eyebrow: 'Dari ide jadi nyata',
-		titleMain: 'Wujudkan ide',
-		titleAccent: 'jadi karya.',
-		description: 'Konsultasikan kebutuhan cetak untuk promosi, produk, dan acara Anda.',
+		image: thirdHeroImageUrl,
+		alt: 'Kaos custom dengan hasil cetak warna-warni CIHOPRINTSHOP',
+		eyebrow: 'Produk custom',
+		titleMain: 'Kaos dengan',
+		titleAccent: 'desainmu.',
+		description: 'Cetak pakaian custom untuk komunitas, acara, dan kebutuhan promosi.',
 		services: [],
-		actionLabel: 'Konsultasi',
-		actionUrl: contactUrl
+		actionLabel: 'Lihat Produk',
+		actionUrl: '#produk-populer'
 	}
 ];
 
@@ -76,7 +78,6 @@ if (hero && heroImage) {
 
 	function showSlide(index) {
 		activeSlide = (index + slides.length) % slides.length;
-		hero.classList.toggle('is-services', activeSlide === 1);
 		const slide = slides[activeSlide];
 		const image = slideImages[activeSlide];
 		eyebrow.textContent = slide.eyebrow;
@@ -114,53 +115,62 @@ if (hero && heroImage) {
 		scheduleAutoplay();
 	}
 
-	const featureCarousel = document.querySelector('.feature-carousel');
+	const bannerCarousel = document.querySelector('[data-banner-carousel]');
 
-	if (featureCarousel) {
-		const featureSlides = [...featureCarousel.querySelectorAll('.feature-carousel-slide')];
-		const featureDots = [...featureCarousel.querySelectorAll('.feature-carousel-dot')];
-		const featureReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-		let activeFeatureSlide = 0;
-		let featureAutoplayTimer = null;
+	if (bannerCarousel) {
+		const bannerImages = [...bannerCarousel.querySelectorAll('[data-banner-slide]')];
+		const bannerDots = [...bannerCarousel.querySelectorAll('[data-banner-index]')];
+		const bannerArrows = [...bannerCarousel.querySelectorAll('[data-banner-direction]')];
+		const bannerReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+		let activeBannerIndex = Math.max(0, bannerImages.findIndex((image) => image.classList.contains('is-active')));
+		let bannerAutoplayTimer = null;
 
-		function stopFeatureAutoplay() {
-			window.clearInterval(featureAutoplayTimer);
-			featureAutoplayTimer = null;
+		function stopBannerAutoplay() {
+			window.clearInterval(bannerAutoplayTimer);
+			bannerAutoplayTimer = null;
 		}
 
-		function scheduleFeatureAutoplay() {
-			stopFeatureAutoplay();
-			if (document.hidden || featureReducedMotion.matches || featureCarousel.matches(':hover, :focus-within')) return;
+		function scheduleBannerAutoplay() {
+			stopBannerAutoplay();
+			if (bannerImages.length < 2 || document.hidden || bannerReducedMotion.matches || bannerCarousel.matches(':hover, :focus-within')) return;
 
-			featureAutoplayTimer = window.setInterval(() => showFeatureSlide(activeFeatureSlide + 1), 5000);
+			bannerAutoplayTimer = window.setInterval(() => {
+				showBannerImage(activeBannerIndex + 1);
+			}, 3000);
 		}
 
-		function showFeatureSlide(index) {
-			activeFeatureSlide = (index + featureSlides.length) % featureSlides.length;
-			featureSlides.forEach((slide, slideIndex) => {
-				slide.hidden = slideIndex !== activeFeatureSlide;
+		function showBannerImage(index) {
+			activeBannerIndex = (index + bannerImages.length) % bannerImages.length;
+			bannerImages.forEach((image, imageIndex) => {
+				const isActive = imageIndex === activeBannerIndex;
+				image.classList.toggle('is-active', isActive);
+				image.setAttribute('aria-hidden', String(!isActive));
 			});
-			featureDots.forEach((dot, dotIndex) => {
-				dot.setAttribute('aria-current', String(dotIndex === activeFeatureSlide));
+			bannerDots.forEach((dot, dotIndex) => {
+				dot.setAttribute('aria-current', String(dotIndex === activeBannerIndex));
 			});
-			scheduleFeatureAutoplay();
 		}
 
-		featureCarousel.querySelectorAll('.feature-carousel-arrow').forEach((button) => {
+		showBannerImage(activeBannerIndex);
+		bannerArrows.forEach((button) => {
 			button.addEventListener('click', () => {
-				showFeatureSlide(activeFeatureSlide + (button.dataset.direction === 'next' ? 1 : -1));
+				showBannerImage(activeBannerIndex + (button.dataset.bannerDirection === 'next' ? 1 : -1));
+				scheduleBannerAutoplay();
 			});
 		});
-		featureDots.forEach((dot, index) => {
-			dot.addEventListener('click', () => showFeatureSlide(index));
+		bannerDots.forEach((dot) => {
+			dot.addEventListener('click', () => {
+				showBannerImage(Number(dot.dataset.bannerIndex));
+				scheduleBannerAutoplay();
+			});
 		});
-		featureCarousel.addEventListener('mouseenter', stopFeatureAutoplay);
-		featureCarousel.addEventListener('mouseleave', scheduleFeatureAutoplay);
-		featureCarousel.addEventListener('focusin', stopFeatureAutoplay);
-		featureCarousel.addEventListener('focusout', scheduleFeatureAutoplay);
-		document.addEventListener('visibilitychange', scheduleFeatureAutoplay);
-		featureReducedMotion.addEventListener('change', scheduleFeatureAutoplay);
-		scheduleFeatureAutoplay();
+		bannerCarousel.addEventListener('mouseenter', stopBannerAutoplay);
+		bannerCarousel.addEventListener('mouseleave', scheduleBannerAutoplay);
+		bannerCarousel.addEventListener('focusin', stopBannerAutoplay);
+		bannerCarousel.addEventListener('focusout', scheduleBannerAutoplay);
+		document.addEventListener('visibilitychange', scheduleBannerAutoplay);
+		bannerReducedMotion.addEventListener('change', scheduleBannerAutoplay);
+		scheduleBannerAutoplay();
 	}
 
 	document.querySelectorAll('.slider-arrow').forEach((button) => {
