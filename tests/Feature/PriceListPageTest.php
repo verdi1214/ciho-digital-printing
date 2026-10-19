@@ -26,15 +26,16 @@ class PriceListPageTest extends TestCase
         $response->assertSee('href="'.route('price-list').'" class="is-active"', false);
     }
 
-    public function test_price_list_page_renders_search_category_filters_and_empty_state(): void
+    public function test_price_list_page_renders_product_cards_directly_without_search_and_filters(): void
     {
         $response = $this->get('/price-list');
 
-        $response->assertSee('data-price-search', false);
-        $response->assertSee('data-price-filter="paper"', false);
-        $response->assertSee('data-price-filter="dtf-uv"', false);
         $response->assertSee('data-price-grid', false);
-        $response->assertSee('data-price-empty', false);
-        $response->assertSee('js/price-list.js', false);
+        $response->assertSee('data-price-category="paper"', false);
+        $response->assertSee('data-price-category="dtf-uv"', false);
+        $response->assertDontSee('data-price-search', false);
+        $response->assertDontSee('data-price-filter="paper"', false);
+        $response->assertDontSee('data-price-empty', false);
+        $response->assertDontSee('js/price-list.js', false);
     }
 }

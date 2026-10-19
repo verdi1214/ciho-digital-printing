@@ -1,11 +1,7 @@
 @extends('layouts.app')
 
 @push('page-styles')
-	<link rel="stylesheet" href="{{ asset('css/price-list.css') }}?v=8">
-@endpush
-
-@push('page-scripts')
-	<script src="{{ asset('js/price-list.js') }}?v=1" defer></script>
+	<link rel="stylesheet" href="{{ asset('css/price-list.css') }}?v=10">
 @endpush
 
 @section('title', 'Price List | CIHOPRINTSHOP')
@@ -25,32 +21,15 @@
 
 				<div class="price-list-panel">
 				<div class="price-list-panel-heading">
-					<div>
-						<p class="price-list-panel-kicker">DAFTAR LAYANAN</p>
-						<h2>Pilih yang kamu butuhkan</h2>
-					</div>
-					<label class="price-list-search">
-						<span class="sr-only">Cari produk</span>
-						<input type="search" data-price-search aria-controls="price-list-grid" placeholder="Cari produk..." autocomplete="off">
-						<span aria-hidden="true">⌕</span>
-					</label>
-				</div>
-
-				<div class="price-list-filters" role="group" aria-label="Filter kategori harga">
-					<button type="button" data-price-filter="all" aria-pressed="true">Semua</button>
-					<button type="button" data-price-filter="paper" aria-pressed="false">Print Kertas</button>
-					<button type="button" data-price-filter="sticker" aria-pressed="false">Stiker</button>
-					<button type="button" data-price-filter="banner" aria-pressed="false">Banner</button>
-					<button type="button" data-price-filter="merchandise" aria-pressed="false">Merchandise</button>
-					<button type="button" data-price-filter="identity" aria-pressed="false">Kartu &amp; ID</button>
-					<button type="button" data-price-filter="dtf-uv" aria-pressed="false">DTF &amp; UV</button>
+					<p class="price-list-panel-kicker">DAFTAR LAYANAN</p>
+					<h2>Pilih yang kamu butuhkan</h2>
 				</div>
 
 				<div class="price-list-grid" id="price-list-grid" data-price-grid>
 				<article class="price-list-card" data-price-category="paper">
 					<h3>HVS</h3>
 					<table><tbody>
-						<tr><th>Fotokopi</th><td>Rp 1.000</td></tr>
+						<tr><th>Photocopy</th><td>Rp 1.000</td></tr>
 						<tr><th>HVS 80 gr B&amp;W - 1 sisi</th><td>Rp 3.000</td></tr>
 						<tr><th>HVS 80 gr B&amp;W - 2 sisi</th><td>Rp 6.000</td></tr>
 						<tr><th>HVS 80 gr warna - 1 sisi</th><td>Rp 5.000</td></tr>
@@ -68,8 +47,8 @@
 						<tr><th>Art Carton 260 gr - 1 sisi</th><td>Rp 20.000</td></tr>
 						<tr><th>Art Carton 260 gr - 2 sisi</th><td>Rp 37.500</td></tr>
 						<tr><th>Art Carton 310 gr - 2 sisi</th><td>Rp 25.000</td></tr>
-						<tr><th>Cutting die cut</th><td>+ Rp 10.000</td></tr>
-						<tr><th>Laminasi panas A3</th><td>+ Rp 5.000</td></tr>
+						<tr><th>+ Cutting die cut</th><td>Rp 10.000</td></tr>
+						<tr><th>+ Laminasi panas A3</th><td>Rp 5.000</td></tr>
 					</tbody></table>
 				</article>
 
@@ -93,11 +72,11 @@
 						<tr><th>Sticker Chromo</th><td>Rp 15.000</td></tr>
 						<tr><th>Sticker Transparan</th><td>Rp 17.500</td></tr>
 						<tr><th>Sticker Hologram</th><td>Rp 17.500</td></tr>
-						<tr><th>Cutting kiss cut</th><td>+ Rp 5.000</td></tr>
-						<tr><th>Cutting die cut</th><td>+ Rp 10.000</td></tr>
-						<tr><th>Laminasi panas A3</th><td>+ Rp 5.000</td></tr>
-						<tr><th>Laminasi dingin A3</th><td>+ Rp 15.000</td></tr>
-						<tr><th>Masking A3</th><td>+ Rp 15.000</td></tr>
+						<tr><th>+ Cutting kiss cut</th><td>Rp 5.000</td></tr>
+						<tr><th>+ Cutting die cut</th><td>Rp 10.000</td></tr>
+						<tr><th>+ Laminasi panas A3</th><td>Rp 5.000</td></tr>
+						<tr><th>+ Laminasi dingin A3</th><td>Rp 15.000</td></tr>
+						<tr><th>+ Masking A3</th><td>Rp 15.000</td></tr>
 					</tbody></table>
 				</article>
 
@@ -107,11 +86,11 @@
 						<tr><th>Flexy Frontlite 280 gr</th><td>Rp 40.000/m</td></tr>
 						<tr><th>Flexy Korcin 340 gr</th><td>Rp 50.000/m</td></tr>
 						<tr><th>Flexy Korcin 440 gr</th><td>Rp 60.000/m</td></tr>
-						<tr><th>Mata itik</th><td>+ Rp 1.000/pcs</td></tr>
-						<tr><th>Finishing seaming</th><td>+ Rp 2.500</td></tr>
-						<tr><th>Finishing selongsong</th><td>+ Rp 3.500</td></tr>
-						<tr><th>Sambung</th><td>+ Rp 10.000</td></tr>
-						<tr><th>Tambal/timpa</th><td>+ Rp 15.000</td></tr>
+						<tr><th>+ Mata itik</th><td>Rp 1.000/pcs</td></tr>
+						<tr><th>+ Finishing seaming</th><td>Rp 2.500</td></tr>
+						<tr><th>+ Finishing selongsong</th><td>Rp 3.500</td></tr>
+						<tr><th>+ Sambung</th><td>Rp 10.000</td></tr>
+						<tr><th>+ Tambal/timpa</th><td>Rp 15.000</td></tr>
 						<tr><th>X-Banner 60 x 160 cm</th><td>Rp 165.000</td></tr>
 						<tr><th>Roll Up Banner 60 x 160 cm</th><td>Rp 350.000</td></tr>
 						<tr><th>Roll Up Banner 80 x 200 cm</th><td>Rp 450.000</td></tr>
@@ -128,9 +107,9 @@
 						<tr><th>Sticker Transparan</th><td>Rp 125.000/m</td></tr>
 						<tr><th>Albatros</th><td>Rp 125.000/m</td></tr>
 						<tr><th>Luster</th><td>Rp 145.000/m</td></tr>
-						<tr><th>Laminasi</th><td>+ Rp 45.000/m</td></tr>
-						<tr><th>Cutting kiss cut</th><td>+ Rp 35.000/m</td></tr>
-						<tr><th>Masking</th><td>+ Rp 35.000/m</td></tr>
+						<tr><th>+ Laminasi</th><td>Rp 45.000/m</td></tr>
+						<tr><th>+ Cutting kiss cut</th><td>Rp 35.000/m</td></tr>
+						<tr><th>+ Masking</th><td>Rp 35.000/m</td></tr>
 					</tbody></table>
 				</article>
 
@@ -188,8 +167,8 @@
 						<tr><th>Art Carton 210 gr - 2 sisi</th><td>Rp 140.000</td></tr>
 						<tr><th>Art Carton 260 gr - 1 sisi</th><td>Rp 90.000</td></tr>
 						<tr><th>Art Carton 260 gr - 2 sisi</th><td>Rp 145.000</td></tr>
-						<tr><th>Laminasi panas 1 sisi</th><td>+ Rp 25.000</td></tr>
-						<tr><th>Laminasi panas 2 sisi</th><td>+ Rp 50.000</td></tr>
+						<tr><th>+ Laminasi panas 1 sisi</th><td>Rp 25.000</td></tr>
+						<tr><th>+ Laminasi panas 2 sisi</th><td>Rp 50.000</td></tr>
 					</tbody></table>
 				</article>
 
@@ -252,7 +231,6 @@
 					<p>Harga menyesuaikan ukuran dan jumlah pesanan.</p>
 				</article>
 				</div>
-				<p class="price-list-empty" data-price-empty role="status" aria-live="polite" hidden>Tidak ada produk yang cocok.</p>
 				</div>
 			</div>
 

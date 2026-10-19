@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @push('page-styles')
-	<link rel="stylesheet" href="{{ asset('css/beranda.css') }}?v=13">
+	<link rel="stylesheet" href="{{ asset('css/beranda.css') }}?v=14">
 @endpush
 
 @push('page-scripts')
-	<script src="{{ asset('js/beranda.js') }}?v=6" defer></script>
+	<script src="{{ asset('js/beranda.js') }}?v=7" defer></script>
 @endpush
 
 @section('content')
@@ -79,10 +79,12 @@
 		</div>
 		<div class="home-advantages">
 			<div class="page-wrap">
-				<div class="feature-carousel" data-banner-carousel role="group" aria-roledescription="carousel" aria-label="Galeri banner CIHO">
-					<img class="feature-carousel-image is-active" data-banner-slide src="{{ asset('images/ciho-promo-banner.png') }}" alt="Banner promo CIHO: printing, design, dan branding" aria-hidden="false">
-					<img class="feature-carousel-image" data-banner-slide src="{{ asset('images/hero-produk-kaos.png') }}" alt="Kaos custom hasil cetak CIHOPRINTSHOP" aria-hidden="true">
-					<img class="feature-carousel-image" data-banner-slide src="{{ asset('images/produk-plakat-tumbler.png') }}" alt="Plakat dan tumbler custom hasil cetak CIHOPRINTSHOP" aria-hidden="true">
+				<div class="feature-carousel-wrap" data-banner-carousel>
+					<div class="feature-carousel" role="group" aria-roledescription="carousel" aria-label="Galeri banner CIHO">
+						<img class="feature-carousel-image is-active" data-banner-slide src="{{ asset('images/ciho-promo-banner.png') }}" alt="Banner promo CIHO: printing, design, dan branding" aria-hidden="false">
+						<img class="feature-carousel-image" data-banner-slide src="{{ asset('images/hero-produk-kaos.png') }}" alt="Kaos custom hasil cetak CIHOPRINTSHOP" aria-hidden="true">
+						<img class="feature-carousel-image" data-banner-slide src="{{ asset('images/produk-plakat-tumbler.png') }}" alt="Plakat dan tumbler custom hasil cetak CIHOPRINTSHOP" aria-hidden="true">
+					</div>
 					<div class="feature-carousel-controls" role="group" aria-label="Kontrol galeri banner">
 						<button class="feature-carousel-arrow" type="button" data-banner-direction="previous" aria-label="Gambar sebelumnya">‹</button>
 						<div class="feature-carousel-dots" role="group" aria-label="Pilih gambar banner">

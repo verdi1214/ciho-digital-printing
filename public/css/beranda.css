@@ -61,11 +61,12 @@
 .home-service-item p { margin: 7px 0 0; color: #69625e; font-size: 13px; line-height: 1.6; }
 .home-service-item > a { display: grid; width: 38px; height: 38px; place-items: center; border: 1px solid #211d1b55; border-radius: 50%; color: var(--red); font-size: 20px; transition: background .18s ease, color .18s ease; }
 .home-service-item > a:hover { background: var(--red); color: #fff; }
-.home-advantages { margin-top: 66px; padding: 28px 0 42px; background: #5c0a10; }
-.feature-carousel { position: relative; overflow: hidden; aspect-ratio: 2583 / 689; border-radius: 24px; box-shadow: 0 16px 38px rgb(14 40 65 / 14%); }
-.feature-carousel-image { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .35s ease; }
-.feature-carousel-image.is-active { opacity: 1; }
-.feature-carousel-controls { position: absolute; z-index: 1; right: 18px; bottom: 16px; display: flex; align-items: center; gap: 10px; padding: 7px; border: 1px solid rgb(255 255 255 / 24%); border-radius: 999px; background: rgb(9 10 13 / 72%); backdrop-filter: blur(8px); }
+.home-advantages { margin-top: 66px; padding: 28px 0 34px; background: #5c0a10; }
+.feature-carousel-wrap { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.feature-carousel { position: relative; width: 100%; overflow: hidden; aspect-ratio: 2583 / 689; border-radius: 24px; box-shadow: 0 16px 38px rgb(14 40 65 / 14%); }
+.feature-carousel-image { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; opacity: 0; z-index: 0; transition: opacity .22s ease-out; }
+.feature-carousel-image.is-active { opacity: 1; z-index: 1; }
+.feature-carousel-controls { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 7px 14px; border: 1px solid rgb(255 255 255 / 24%); border-radius: 999px; background: rgb(9 10 13 / 72%); backdrop-filter: blur(8px); box-shadow: 0 4px 16px rgb(0 0 0 / 25%); }
 .feature-carousel-arrow { display: grid; width: 32px; height: 32px; place-items: center; border: 0; border-radius: 50%; background: rgb(255 255 255 / 14%); color: #fff; font-size: 20px; line-height: 1; cursor: pointer; transition: background .18s ease; }
 .feature-carousel-arrow:hover { background: var(--red); }
 .feature-carousel-dots { display: flex; align-items: center; gap: 7px; }
@@ -127,9 +128,10 @@
 	.home-service-item h3 { font-size: 18px; }
 	.home-service-item p { font-size: 12px; }
 	.home-service-item > a { width: 32px; height: 32px; }
-	.home-advantages { margin-top: 42px; padding: 20px 0 28px; }
+	.home-advantages { margin-top: 42px; padding: 20px 0 24px; }
+	.feature-carousel-wrap { gap: 12px; }
 	.feature-carousel { border-radius: 18px; }
-	.feature-carousel-controls { right: 10px; bottom: 10px; gap: 7px; padding: 5px; }
+	.feature-carousel-controls { gap: 7px; padding: 5px 12px; }
 	.feature-carousel-arrow { width: 28px; height: 28px; }
 	.home-products { padding: 58px 0; }
 	.popular-grid { gap: 24px 14px; }

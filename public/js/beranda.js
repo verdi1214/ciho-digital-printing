@@ -121,6 +121,7 @@ if (hero && heroImage) {
 		const bannerImages = [...bannerCarousel.querySelectorAll('[data-banner-slide]')];
 		const bannerDots = [...bannerCarousel.querySelectorAll('[data-banner-index]')];
 		const bannerArrows = [...bannerCarousel.querySelectorAll('[data-banner-direction]')];
+		const bannerControls = bannerCarousel.querySelector('.feature-carousel-controls');
 		const bannerReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 		let activeBannerIndex = Math.max(0, bannerImages.findIndex((image) => image.classList.contains('is-active')));
 		let bannerAutoplayTimer = null;
@@ -132,11 +133,12 @@ if (hero && heroImage) {
 
 		function scheduleBannerAutoplay() {
 			stopBannerAutoplay();
-			if (bannerImages.length < 2 || document.hidden || bannerReducedMotion.matches || bannerCarousel.matches(':hover, :focus-within')) return;
+			if (bannerImages.length < 2 || document.hidden || bannerReducedMotion.matches) return;
+			if (bannerControls && bannerControls.matches(':hover, :focus-within')) return;
 
 			bannerAutoplayTimer = window.setInterval(() => {
 				showBannerImage(activeBannerIndex + 1);
-			}, 3000);
+			}, 2000);
 		}
 
 		function showBannerImage(index) {
@@ -164,10 +166,12 @@ if (hero && heroImage) {
 				scheduleBannerAutoplay();
 			});
 		});
-		bannerCarousel.addEventListener('mouseenter', stopBannerAutoplay);
-		bannerCarousel.addEventListener('mouseleave', scheduleBannerAutoplay);
-		bannerCarousel.addEventListener('focusin', stopBannerAutoplay);
-		bannerCarousel.addEventListener('focusout', scheduleBannerAutoplay);
+		if (bannerControls) {
+			bannerControls.addEventListener('mouseenter', stopBannerAutoplay);
+			bannerControls.addEventListener('mouseleave', scheduleBannerAutoplay);
+			bannerControls.addEventListener('focusin', stopBannerAutoplay);
+			bannerControls.addEventListener('focusout', scheduleBannerAutoplay);
+		}
 		document.addEventListener('visibilitychange', scheduleBannerAutoplay);
 		bannerReducedMotion.addEventListener('change', scheduleBannerAutoplay);
 		scheduleBannerAutoplay();
