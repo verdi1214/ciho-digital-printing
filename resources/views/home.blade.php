@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @push('page-styles')
-	<link rel="stylesheet" href="{{ asset('css/beranda.css') }}?v=14">
+	<link rel="stylesheet" href="{{ asset('css/beranda.css') }}?v=27">
 @endpush
 
 @push('page-scripts')
-	<script src="{{ asset('js/beranda.js') }}?v=7" defer></script>
+	<script src="{{ asset('js/beranda.js') }}?v=8" defer></script>
 @endpush
 
 @section('content')
@@ -127,6 +127,88 @@
 				</a>
 			</div>
 			<div class="products-cta"><span>Masih punya pertanyaan seputar kebutuhan cetak Anda? Mari konsultasikan bersama CIHO. </span><a class="button" href="{{ route('contact') }}">Konsultasi Pemesanan <span class="button-arrow" aria-hidden="true">→</span></a></div>
+		</div>
+	</section>
+
+	@php
+		$machinePartners = [
+			['name' => 'Hinode', 'detail' => 'Printer Outdoor & DTF', 'image' => 'hinode.svg'],
+			['name' => 'Epson', 'detail' => 'SureColor SC-F531', 'image' => 'epson.svg'],
+			['name' => 'Nocai', 'detail' => 'Printer Flatbed', 'image' => 'nocai.svg'],
+		];
+		$clients = [
+			['name' => 'Pertamina', 'image' => 'pertamina.svg'],
+			['name' => 'Pizza Hut', 'image' => 'pizza-hut.svg'],
+			['name' => 'Samsung', 'image' => 'samsung.svg'],
+			['name' => 'Tokopedia', 'image' => 'tokopedia.svg'],
+			['name' => 'Traveloka', 'image' => 'traveloka.png'],
+			['name' => 'BCA', 'image' => 'bca.svg'],
+			['name' => 'BFI Finance', 'image' => 'bfi.png'],
+			['name' => 'Bukalapak', 'image' => 'bukalapak.svg'],
+			['name' => 'Bumi Langit', 'image' => 'bumi-langit.png'],
+			['name' => 'Kepolisian', 'image' => 'kepolisian-ri.svg'],
+			['name' => 'AQUA', 'image' => 'aqua.png'],
+		];
+	@endphp
+
+	<section class="home-credibility" aria-labelledby="home-credibility-title" data-credibility-carousel>
+		<div class="page-wrap">
+			<div class="credibility-heading">
+				<h2 id="home-credibility-title">Mesin &amp; klien kami</h2>
+				<button class="credibility-toggle" type="button" aria-label="Jeda animasi mesin dan klien" aria-pressed="false">
+					<span aria-hidden="true">Ⅱ</span>
+				</button>
+			</div>
+
+			<div class="credibility-row">
+				<h3>Didukung mesin cetak</h3>
+				<div class="credibility-viewport" role="group" aria-label="Mesin cetak bergerak ke kiri" data-direction="left">
+					<div class="credibility-track credibility-track-left">
+						<ul class="credibility-group">
+							@foreach (range(1, 3) as $machineSet)
+								@foreach ($machinePartners as $machine)
+									<li class="credibility-card">
+										<img class="credibility-machine-logo" src="{{ asset('images/machine-logos/'.$machine['image']) }}" alt="{{ $machine['name'] }}" loading="lazy">
+										<span class="credibility-detail">{{ $machine['detail'] }}</span>
+									</li>
+								@endforeach
+							@endforeach
+						</ul>
+						<ul class="credibility-group" aria-hidden="true">
+							@foreach (range(1, 3) as $machineSet)
+								@foreach ($machinePartners as $machine)
+									<li class="credibility-card">
+										<img class="credibility-machine-logo" src="{{ asset('images/machine-logos/'.$machine['image']) }}" alt="" loading="lazy">
+										<span class="credibility-detail">{{ $machine['detail'] }}</span>
+									</li>
+								@endforeach
+							@endforeach
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="credibility-row">
+				<h3>Dipercaya oleh</h3>
+				<div class="credibility-viewport" role="group" aria-label="Klien bergerak ke kanan" data-direction="right">
+					<div class="credibility-track credibility-track-right">
+						<ul class="credibility-group">
+							@foreach ($clients as $client)
+								<li class="credibility-card">
+									<img @class(['credibility-client-logo', 'credibility-client-logo-aqua' => $client['name'] === 'AQUA']) src="{{ asset('images/client-logos/'.$client['image']) }}" alt="{{ $client['name'] }}" loading="lazy">
+								</li>
+							@endforeach
+						</ul>
+						<ul class="credibility-group" aria-hidden="true">
+							@foreach ($clients as $client)
+								<li class="credibility-card">
+									<img @class(['credibility-client-logo', 'credibility-client-logo-aqua' => $client['name'] === 'AQUA']) src="{{ asset('images/client-logos/'.$client['image']) }}" alt="" loading="lazy">
+								</li>
+							@endforeach
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 @endsection

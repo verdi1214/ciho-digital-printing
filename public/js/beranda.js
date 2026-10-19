@@ -115,6 +115,21 @@ if (hero && heroImage) {
 		scheduleAutoplay();
 	}
 
+	const credibilityCarousel = document.querySelector('[data-credibility-carousel]');
+	const credibilityToggle = credibilityCarousel?.querySelector('.credibility-toggle');
+
+	if (credibilityCarousel && credibilityToggle) {
+		credibilityToggle.addEventListener('click', () => {
+			const isPaused = credibilityCarousel.classList.toggle('is-paused');
+			credibilityToggle.setAttribute('aria-pressed', String(isPaused));
+			credibilityToggle.setAttribute(
+				'aria-label',
+				isPaused ? 'Lanjutkan animasi mesin dan klien' : 'Jeda animasi mesin dan klien'
+			);
+			credibilityToggle.querySelector('span').textContent = isPaused ? '▶' : 'Ⅱ';
+		});
+	}
+
 	const bannerCarousel = document.querySelector('[data-banner-carousel]');
 
 	if (bannerCarousel) {

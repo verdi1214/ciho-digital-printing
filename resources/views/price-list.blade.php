@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @push('page-styles')
-	<link rel="stylesheet" href="{{ asset('css/price-list.css') }}?v=10">
+	<link rel="stylesheet" href="{{ asset('css/price-list.css') }}?v=14">
 @endpush
 
 @section('title', 'Price List | CIHOPRINTSHOP')

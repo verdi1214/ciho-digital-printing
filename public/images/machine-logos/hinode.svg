@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" role="img">
+	<path d="M18 25a22 22 0 0 1 42 0" fill="none" stroke="#ed1c24" stroke-linecap="round" stroke-width="8"/>
+	<path d="M12 37h54" fill="none" stroke="#ed1c24" stroke-linecap="round" stroke-width="5"/>
+	<text x="78" y="58" fill="#30394b" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" letter-spacing="1">HINODE</text>
+</svg>
