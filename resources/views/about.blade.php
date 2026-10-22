@@ -1,65 +1,56 @@
 @extends('layouts.app')
 
+@push('page-styles')
+	<link rel="stylesheet" href="{{ asset('css/tentang.css') }}?v=2">
+@endpush
+
 @section('title', 'Tentang Kami')
 @section('description', 'Kenali CIHOPRINTSHOP, partner digital printing untuk kebutuhan bisnis dan personal.')
 
 @section('content')
-	<section class="content-page">
-		<div class="about-masthead">
-			<div class="page-wrap">
-				<p class="eyebrow"><span></span> CIHOPRINTSHOP / PROFIL</p>
-				<div class="about-masthead-row">
-					<h1>Tentang <span class="accent">CIHO.</span></h1>
-					<p>Partner digital printing untuk membawa ide bisnis dan personal menjadi nyata.</p>
+	<section class="content-page about-page" aria-labelledby="about-title">
+		<div class="page-wrap about-editorial">
+			<div class="about-brand-line">
+				<p>CIHO <span>/</span> PRINTSHOP</p>
+				<p>JAKARTA <span>/</span> DIGITAL PRINTING</p>
+			</div>
+
+			<div class="about-title-row">
+				<h1 id="about-title">Di balik setiap<br>cetakan,<br><span>ada cerita.</span></h1>
+				<img class="about-logo-stamp" src="{{ asset('images/ciho-logo.png') }}" alt="CIHOPRINTSHOP Jakarta">
+			</div>
+
+			<figure class="about-production">
+				<img src="{{ asset('images/ciho-printing-machine.jpg') }}" alt="Mesin produksi digital printing CIHOPRINTSHOP" fetchpriority="high">
+				<figcaption>
+					<span>PROSES PRODUKSI CIHOPRINTSHOP</span>
+					<span>DETAIL KECIL, HASIL BERARTI</span>
+				</figcaption>
+			</figure>
+
+			<div class="about-introduction">
+				<div class="about-introduction-heading">
+					<p class="about-kicker">01 / MENGENAL CIHO</p>
+					<h2>Partner cetak.<br>Teman bercerita.</h2>
+				</div>
+				<div class="about-introduction-copy">
+					<h3>Ide kamu punya karakter. Hasil cetaknya juga harus begitu.</h3>
+					<p>CIHOPRINTSHOP hadir untuk membantu kebutuhan digital printing dan percetakan, untuk bisnis, acara, maupun kebutuhan personal. Kami percaya setiap ide punya cerita yang layak diwujudkan dengan hasil cetak yang tepat.</p>
+					<p>Dengan pilihan bahan dan layanan yang beragam, kami membantu mencari solusi cetak yang sesuai dengan kebutuhanmu. Kami percaya perhatian pada hal kecil membuat perbedaan besar.</p>
 				</div>
 			</div>
 		</div>
-		<div class="page-wrap about-content">
-			<div class="about-photo-wrap">
-				<img class="about-photo" src="{{ asset('images/ciho-printing-machine.jpg') }}" alt="Mesin digital printing CIHOPRINTSHOP">
-				<span class="photo-caption">Proses produksi CIHOPRINTSHOP</span>
-			</div>
-			<div class="about-copy">
-				<p class="eyebrow"><span></span> 01 / Mengenal CIHO</p>
-				<h2>Apa itu <span class="accent">CIHO?</span></h2>
-				<p>CIHO Printshop adalah usaha yang bergerak di bidang jasa digital printing dan percetakan, yang menyediakan berbagai layanan cetak untuk memenuhi kebutuhan individu, bisnis, maupun organisasi. CIHO Printshop berkomitmen untuk memberikan hasil cetakan yang berkualitas, pelayanan yang profesional, serta solusi percetakan yang sesuai dengan kebutuhan pelanggan.
-                    Dengan mengutamakan kualitas, ketelitian, dan kepuasan pelanggan, CIHO Printshop hadir sebagai mitra percetakan yang membantu mewujudkan berbagai kebutuhan desain dan media cetak secara efektif dan terpercaya.</p>
-				<p>Solusi Percetakan untuk Setiap Kebutuhan
-                    CIHO Printshop adalah penyedia layanan digital printing yang menawarkan solusi percetakan berkualitas untuk kebutuhan personal, bisnis, dan promosi. Kami mengutamakan kualitas hasil cetak, ketepatan, dan pelayanan terbaik untuk membantu mewujudkan setiap kebutuhan percetakan Anda.</p>
-				<a class="button" href="{{ route('contact') }}">Diskusikan kebutuhan Anda <span class="button-arrow" aria-hidden="true">→</span></a>
-			</div>
-		</div>
-		<section class="about-history" aria-labelledby="about-history-title">
+
+		<div class="about-end-stripe" aria-hidden="true"></div>
+
+		<section class="about-story-section" aria-labelledby="about-story-title">
 			<div class="page-wrap">
-				<div class="about-history-heading">
-					<div>
-						<p class="eyebrow"><span></span> 02 / Perjalanan</p>
-						<h2 id="about-history-title">Sejarah <span>CIHO.</span></h2>
-					</div>
-					<p class="about-history-lead">Dari kebutuhan cetak yang beragam hingga proses yang makin praktis, perjalanan CIHO berpusat pada satu hal: membantu setiap ide siap hadir di dunia nyata.</p>
-				</div>
-				<div class="about-timeline">
-					<article>
-						<span class="about-timeline-number">01</span>
-						<div><p class="about-timeline-label">Awal perjalanan</p><h3>Berangkat dari kebutuhan cetak</h3><p>CIHOPRINTSHOP hadir untuk membantu pelanggan mewujudkan desain menjadi media cetak yang bisa digunakan.</p></div>
-					</article>
-					<article>
-						<span class="about-timeline-number">02</span>
-						<div><p class="about-timeline-label">Ragam layanan</p><h3>Mengikuti kebutuhan pelanggan</h3><p>Layanan mencakup digital printing, format besar, stiker, label, dan kemasan untuk beragam keperluan.</p></div>
-					</article>
-					<article>
-						<span class="about-timeline-number">03</span>
-						<div><p class="about-timeline-label">Hari ini</p><h3>Proses yang lebih jelas</h3><p>Kami membantu membahas bahan, ukuran, dan jumlah sejak awal agar pilihan cetak terasa lebih tepat.</p></div>
-					</article>
-				</div>
+				<p class="about-kicker">02 / SEJARAH CIHO</p>
+				<h2 id="about-story-title">Setiap perjalanan punya cerita.</h2>
+				<p class="about-story-placeholder">[Sejarah singkat CIHO: awal berdiri dan perjalanan usaha hingga saat ini. Materi resmi akan ditambahkan di sini.]</p>
 			</div>
 		</section>
-		<div class="values-band">
-			<div class="page-wrap values-grid">
-				<article><span>01</span><h3>Teliti pada detail</h3><p>Ukuran, warna, dan finishing dipertimbangkan untuk hasil yang lebih sesuai.</p></article>
-				<article><span>02</span><h3>Solusi fleksibel</h3><p>Beragam kebutuhan cetak untuk bisnis, acara, dan penggunaan personal.</p></article>
-				<article><span>03</span><h3>Proses yang jelas</h3><p>Kebutuhan Anda dibicarakan sejak awal agar pilihan cetak lebih tepat.</p></article>
-			</div>
-		</div>
+
+		<div class="about-end-stripe" aria-hidden="true"></div>
 	</section>
 @endsection

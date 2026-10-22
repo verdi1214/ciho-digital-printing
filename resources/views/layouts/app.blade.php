@@ -9,7 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="{{ asset('css/ciho.css') }}?v=81">
+	<link rel="stylesheet" href="{{ asset('css/ciho.css') }}?v=83">
 	@stack('page-styles')
 	<link rel="icon" type="image/png" href="{{ asset('images/ciho-logo-color.png') }}?v=1">
 </head>
@@ -67,6 +67,18 @@
 						<span>Chat WhatsApp Admin</span>
 						<span aria-hidden="true">↗</span>
 					</a>
+					<div class="footer-social-links" aria-label="Media sosial CIHOPRINTSHOP">
+						<a class="footer-social-link" href="https://www.instagram.com/cihojakarta_printshop?obrf=MWFjaG5leHNnczQ5cw==" target="_blank" rel="noopener noreferrer">
+							<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><defs><linearGradient id="instagram-gradient" x1="3" y1="21" x2="21" y2="3" gradientUnits="userSpaceOnUse"><stop stop-color="#feda75"/><stop offset=".3" stop-color="#fa7e1e"/><stop offset=".58" stop-color="#d62976"/><stop offset=".8" stop-color="#962fbf"/><stop offset="1" stop-color="#4f5bd5"/></linearGradient></defs><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="url(#instagram-gradient)" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="url(#instagram-gradient)" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="url(#instagram-gradient)"/></svg>
+							<span>Instagram</span>
+							<span aria-hidden="true">↗</span>
+						</a>
+						<a class="footer-social-link" href="https://www.tiktok.com/@cihojakarta_printshop?_r=1&amp;_t=ZS-9AlC6FcFEgf" target="_blank" rel="noopener noreferrer">
+							<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 3v11.2a4.2 4.2 0 1 1-3.6-4.15M15 3c.6 3.1 2.4 5 5 5.4" fill="none" stroke="#25f4ee" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" transform="translate(-.8 .5)"/><path d="M15 3v11.2a4.2 4.2 0 1 1-3.6-4.15M15 3c.6 3.1 2.4 5 5 5.4" fill="none" stroke="#fe2c55" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" transform="translate(.8 -.3)"/><path d="M15 3v11.2a4.2 4.2 0 1 1-3.6-4.15M15 3c.6 3.1 2.4 5 5 5.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/></svg>
+							<span>TikTok</span>
+							<span aria-hidden="true">↗</span>
+						</a>
+					</div>
 				</div>
 
 				<nav class="footer-column" aria-label="Layanan">
