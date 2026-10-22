@@ -28,7 +28,8 @@ class HomePartnerCarouselsTest extends TestCase
             'src="'.asset('images/client-logos/kepolisian-ri.svg').'"',
             'alt="AQUA"',
             'src="'.asset('images/client-logos/aqua.png').'"',
-            'Jeda animasi mesin dan klien',
         ], false);
+
+        $response->assertDontSee('credibility-toggle');
     }
 }
