@@ -5,7 +5,7 @@
 @endpush
 
 @push('page-scripts')
-	<script type="module" src="{{ asset('js/portofolio.js') }}?v=1"></script>
+	<script type="module" src="{{ asset('js/portofolio.js') }}?v=3"></script>
 @endpush
 
 @section('title', 'Portofolio & Hasil Cetak | CIHOPRINTSHOP')
@@ -27,15 +27,15 @@
 				<!-- Stats Strip -->
 				<div class="stats-strip">
 					<div class="stat-item">
-						<span class="stat-val">1.000<span class="stat-accent">+</span></span>
+						<span class="stat-val"><span class="stat-count" data-count="1000">1.000</span><span class="stat-accent">+</span></span>
 						<span class="stat-label">Project Selesai Tiap Bulan</span>
 					</div>
 					<div class="stat-item">
-						<span class="stat-val">100<span class="stat-accent">%</span></span>
+						<span class="stat-val"><span class="stat-count" data-count="100">100</span><span class="stat-accent">%</span></span>
 						<span class="stat-label">Garansi Kerapian Potong</span>
 					</div>
 					<div class="stat-item">
-						<span class="stat-val">1-2<span class="stat-accent">Hari</span></span>
+						<span class="stat-val"><span class="stat-count" data-count="1-2">1-2</span><span class="stat-accent">Hari</span></span>
 						<span class="stat-label">Rata-rata Waktu Produksi</span>
 					</div>
 				</div>

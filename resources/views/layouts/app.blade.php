@@ -9,7 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="{{ asset('css/ciho.css') }}?v=83">
+	<link rel="stylesheet" href="{{ asset('css/ciho.css') }}?v=86">
 	@stack('page-styles')
 	<link rel="icon" type="image/png" href="{{ asset('images/ciho-logo-color.png') }}?v=1">
 </head>
@@ -23,12 +23,12 @@
 		<div class="header-inner">
 			<a class="brand" href="{{ route('home') }}" aria-label="CIHOPRINTSHOP, beranda">
 				<img class="brand-wordmark brand-wordmark-light"
-					src="{{ asset('images/ciho-wordmark-footer.png') }}?v=1"
+					src="{{ asset('images/ciho-wordmark-about.png') }}?v=1"
 					alt=""
 					width="4228"
 					height="768">
-				<img class="brand-wordmark brand-wordmark-color"
-					src="{{ asset('images/ciho-wordmark-color.png') }}?v=1"
+				<img class="brand-wordmark brand-wordmark-dark"
+					src="{{ asset('images/ciho-wordmark-black.png') }}?v=1"
 					alt=""
 					width="4228"
 					height="768">
@@ -58,7 +58,7 @@
 			<div class="footer-main">
 				<div class="footer-about">
 					<a class="brand footer-brand" href="{{ route('home') }}" aria-label="CIHOPRINTSHOP, beranda">
-						<img class="brand-wordmark" src="{{ asset('images/ciho-wordmark-footer.png') }}?v=1" alt="CIHOPRINTSHOP Digital Printing" width="4228" height="768">
+						<img class="brand-wordmark" src="{{ asset('images/ciho-wordmark-about.png') }}?v=1" alt="CIHOPRINTSHOP Digital Printing" width="4228" height="768">
 					</a>
 					<p class="footer-tagline">Ide kamu, kami cetak jadi nyata.</p>
 					<p class="footer-description">Partner digital printing untuk kebutuhan promosi, produk, acara, dan bisnis Anda.</p>

@@ -6,13 +6,13 @@ use Tests\TestCase;
 
 class HomeHeroSlidesTest extends TestCase
 {
-    public function test_home_hero_uses_printing_machine_flatbed_and_shirt_photos(): void
+    public function test_home_hero_uses_promo_banner_and_shirt_photos(): void
     {
         $response = $this->get(route('home'));
 
         $response->assertSeeInOrder([
             'src="'.asset('images/ciho-printing-machine.jpg').'"',
-            'data-machine-image="'.asset('images/mesin-nocai-flatbed.png').'"',
+            'data-promo-image="'.asset('images/ciho-promo-hero.png').'"',
             'data-shirt-image="'.asset('images/hero-produk-kaos.png').'"',
         ], false);
         $response->assertSee('class="hero"', false);

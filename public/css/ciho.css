@@ -36,9 +36,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--yellow); outlin
 .site-header .brand { position: relative; display: flex; width: fit-content; height: 84px; flex: 0 0 auto; align-items: center; justify-content: flex-start; gap: 12px; }
 .site-header .brand::before, .site-header .brand::after { content: none; }
 .site-header .brand-wordmark { display: block; width: clamp(170px, 16vw, 230px); height: auto; object-fit: contain; transform: translateY(-6px); }
-.site-header .brand-wordmark-color,
+.site-header .brand-wordmark-dark,
 .site-header.is-scrolled .brand-wordmark-light { display: none; }
-.site-header.is-scrolled .brand-wordmark-color { display: block; }
+.site-header.is-scrolled .brand-wordmark-dark { display: block; }
 .brand-mark { display: grid; width: 44px; height: 44px; place-items: center; border: 3px solid var(--red); border-radius: 50%; color: var(--yellow); font: 800 23px/1 var(--font-display); transform: rotate(-9deg); }
 .brand-type { color: var(--yellow); font: 800 17px/.96 var(--font-display); letter-spacing: -.5px; }
 .brand-type small { display: block; margin-top: 4px; color: var(--yellow); font: 700 8px/1 var(--font-body); letter-spacing: 2.2px; }
@@ -86,7 +86,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid var(--yellow); outlin
 .footer-whatsapp-link { display: inline-flex; align-items: center; gap: 9px; margin-top: 21px; color: #d6d6dc; font-size: 12px; font-weight: 700; }
 .footer-whatsapp-link:hover, .footer-contact-link:hover { color: var(--yellow); }
 .footer-whatsapp-link svg { width: 22px; height: 22px; color: #00c96b; }
-.footer-social-links { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; margin-top: 12px; }
+.footer-social-links { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; margin-top: 0; }
 .footer-social-link { display: inline-flex; align-items: center; gap: 9px; color: #d6d6dc; font-size: 12px; font-weight: 700; transition: color .18s ease; }
 .footer-social-link:hover { color: var(--yellow); }
 .footer-social-link svg { width: 19px; height: 19px; flex: 0 0 auto; }

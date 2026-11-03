@@ -10,7 +10,7 @@
 
 @section('content')
 	<section class="hero" id="beranda" aria-label="Beranda CIHOPRINTSHOP ">
-		<img class="hero-image" src="{{ asset('images/ciho-printing-machine.jpg') }}" data-hero-image="{{ asset('images/ciho-printing-machine.jpg') }}" data-machine-image="{{ asset('images/mesin-nocai-flatbed.png') }}" data-shirt-image="{{ asset('images/hero-produk-kaos.png') }}" alt="Mesin digital printing CIHOPRINTSHOP" fetchpriority="high">
+		<img class="hero-image" src="{{ asset('images/ciho-printing-machine.jpg') }}" data-hero-image="{{ asset('images/ciho-printing-machine.jpg') }}" data-promo-image="{{ asset('images/ciho-promo-hero.png') }}" data-shirt-image="{{ asset('images/hero-produk-kaos.png') }}" alt="Mesin digital printing CIHOPRINTSHOP" fetchpriority="high">
 		<div class="hero-shade" aria-hidden="true"></div>
 		<div class="hero-inner">
 			<div class="hero-copy" aria-live="polite">
@@ -83,7 +83,7 @@
 					<div class="feature-carousel" role="group" aria-roledescription="carousel" aria-label="Galeri banner CIHO">
 						<img class="feature-carousel-image is-active" data-banner-slide src="{{ asset('images/ciho-promo-banner.png') }}" alt="Banner promo CIHO: printing, design, dan branding" aria-hidden="false">
 						<img class="feature-carousel-image" data-banner-slide src="{{ asset('images/ciho-banner-merchandise.png') }}" alt="Banner produk merchandise dan mesin cetak CIHOPRINTSHOP" aria-hidden="true">
-						<img class="feature-carousel-image" data-banner-slide src="{{ asset('images/produk-plakat-tumbler.png') }}" alt="Plakat dan tumbler custom hasil cetak CIHOPRINTSHOP" aria-hidden="true">
+						<img class="feature-carousel-image" data-banner-slide src="{{ asset('images/ciho-banner-printing-products-hd.png') }}" alt="Banner layanan cetak dan produk CIHOPRINTSHOP" aria-hidden="true">
 					</div>
 					<div class="feature-carousel-controls" role="group" aria-label="Kontrol galeri banner">
 						<button class="feature-carousel-arrow" type="button" data-banner-direction="previous" aria-label="Gambar sebelumnya">‹</button>

@@ -1,6 +1,6 @@
 const heroImageElement = document.querySelector('.hero-image');
 const firstHeroImageUrl = heroImageElement?.dataset.heroImage;
-const secondHeroImageUrl = heroImageElement?.dataset.machineImage;
+const secondHeroImageUrl = heroImageElement?.dataset.promoImage;
 const thirdHeroImageUrl = heroImageElement?.dataset.shirtImage;
 const machinesUrl = document.querySelector('#primary-action')?.dataset.machinesUrl ?? '#';
 const slides = [
@@ -17,7 +17,7 @@ const slides = [
 	},
 	{
 		image: secondHeroImageUrl,
-		alt: 'Mesin flatbed untuk proses cetak digital di CIHOPRINTSHOP',
+		alt: 'Banner promosi hasil cetak berkualitas CIHOPRINTSHOP',
 		eyebrow: 'Teknologi cetak',
 		titleMain: 'Cetak presisi',
 		titleAccent: 'untuk ide besar.',
