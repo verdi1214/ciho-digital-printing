@@ -5,7 +5,7 @@
 @endpush
 
 @push('page-scripts')
-	<script type="module" src="{{ asset('js/portofolio.js') }}?v=3"></script>
+	<script type="module" src="{{ asset('js/portofolio.js') }}?v=4"></script>
 @endpush
 
 @section('title', 'Portofolio & Hasil Cetak | CIHOPRINTSHOP')

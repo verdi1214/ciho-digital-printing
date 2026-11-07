@@ -5,7 +5,7 @@
 @endpush
 
 @push('page-scripts')
-	<script type="module" src="{{ asset('js/bahan.js') }}?v=3"></script>
+	<script type="module" src="{{ asset('js/bahan.js') }}?v=4"></script>
 @endpush
 
 @section('title', 'Katalog Bahan Cetak & Finishing | CIHOPRINTSHOP')
@@ -23,19 +23,19 @@
 					<h1>Panduan Material Cetak<br><span class="accent">Presisi, Kuat & Tahan Cuaca.</span></h1>
 					<p class="page-lead">Setiap media cetak memiliki karakteristik fisik, daya serap tinta, dan ketahanan cuaca yang berbeda. Pilih bahan paling ideal sesuai peruntukan promosi dan anggaran bisnis Anda.</p>
 				</div>
-                
+
 				<!-- Stats Strip -->
 				<div class="stats-strip">
 					<div class="stat-item">
-						<span class="stat-val">76<span class="stat-accent">+</span></span>
+						<span class="stat-val"><span class="stat-count" data-count="76">76</span><span class="stat-accent">+</span></span>
 						<span class="stat-label">Pilihan Bahan & Cetak</span>
 					</div>
 					<div class="stat-item">
-						<span class="stat-val">100<span class="stat-accent">%</span></span>
+						<span class="stat-val"><span class="stat-count" data-count="100">100</span><span class="stat-accent">%</span></span>
 						<span class="stat-label">Bahan Grade A Anti Pudar</span>
 					</div>
 					<div class="stat-item">
-						<span class="stat-val">4<span class="stat-accent">+</span></span>
+						<span class="stat-val"><span class="stat-count" data-count="4">4</span><span class="stat-accent">+</span></span>
 						<span class="stat-label">Opsi Finishing & Proteksi</span>
 					</div>
 				</div>

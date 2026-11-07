@@ -1,4 +1,5 @@
 import { setupCategoryFilter } from './filter.js';
+import { setupCountUp } from './count-up.js';
 
 const materialsList = document.querySelector('#materials-list');
 
@@ -11,3 +12,4 @@ if (materialsList) {
 }
 
 setupCategoryFilter('#materials-filter', '.material-category-section, .finishing-studio-section');
+setupCountUp('.stat-count[data-count]');
