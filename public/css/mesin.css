@@ -3,7 +3,8 @@
 .machine-card { min-width: 0; overflow: hidden; border: 1px solid #e5e5e2; border-radius: 4px; background: #fff; box-shadow: 0 3px 12px rgb(0 0 0 / 2%); }
 .machine-card-visual, .machine-placeholder-visual { position: relative; display: grid; height: 420px; place-items: center; overflow: hidden; background: #fff; }
 .machine-photo { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; transform: scale(1.08); }
-.machine-photo-tag { position: absolute; z-index: 3; top: 14px; left: 14px; padding: 7px 10px; background: rgb(255 255 255 / 92%); color: #211d1b; font-size: 10px; font-weight: 800; text-transform: uppercase; }
+.machine-card-visual-full { display: block; height: auto; }
+.machine-photo-full { position: static; width: 100%; height: auto; object-fit: contain; object-position: center; transform: none; }
 .machine-placeholder-note { width: min(220px, calc(100% - 36px)); padding: 16px; border: 1px solid #e3e3df; background: #fff; }
 .machine-placeholder-note span { display: block; color: #77736f; font-size: 8px; font-weight: 800; letter-spacing: .8px; text-transform: uppercase; }
 .machine-placeholder-note strong { display: block; margin-top: 6px; color: #211d1b; font: 700 16px/1.2 var(--font-display); }
@@ -37,6 +38,7 @@
 @media (max-width: 900px) {
 	.machine-grid { gap: 18px; }
 	.machine-card-visual, .machine-placeholder-visual { height: 380px; }
+	.machine-card-visual-full { height: auto; }
 	.machine-card-body { min-height: 260px; padding: 16px; }
 }
 
@@ -44,6 +46,7 @@
 	.machine-content { padding: 30px 0 44px; }
 	.machine-grid { grid-template-columns: 1fr; gap: 18px; }
 	.machine-card-visual, .machine-placeholder-visual { height: 360px; }
+	.machine-card-visual-full { height: auto; }
 	.machine-card-body { min-height: 0; padding: 17px; }
 	.machine-card-body h2 { font-size: 21px; }
 	.machine-cta, .machine-placeholder-link { margin-top: 2px; }
