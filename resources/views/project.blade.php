@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @push('page-styles')
-	<link rel="stylesheet" href="{{ asset('css/portofolio.css') }}?v=2">
+	<link rel="stylesheet" href="{{ asset('css/portofolio.css') }}?v=5">
 @endpush
 
 @push('page-scripts')
@@ -9,7 +9,7 @@
 @endpush
 
 @section('title', 'Portofolio & Hasil Cetak | CIHOPRINTSHOP')
-@section('description', 'Lihat galeri hasil cetak digital printing CIHOPRINTSHOP: Banner promosi, label stiker kemasan, stationery kantor, dan kemasan produk berkualitas tinggi.')
+@section('description', 'Jelajahi berbagai hasil cetak CIHOPRINTSHOP, mulai dari merchandise custom, media promosi, label stiker, hingga bahan cetak berkualitas.')
 
 @section('content')
 	<section class="content-page project-page">
@@ -20,15 +20,15 @@
 					<div class="badge-pill badge-pill-yellow">
 						<span class="status-indicator"></span> BUKTI NYATA KUALITAS PRODUKSI
 					</div>
-					<h1>Portofolio & Hasil Cetak<br><Hasil class="accent">Kualitas Nyata, <br>Hasil Istimewa.</span></h1>
+					<h1>Portofolio & Hasil Cetak<br><span class="accent">Kualitas Nyata, <br>Hasil Istimewa.</span></h1>
 					<p class="page-lead">Jelajahi berbagai hasil produksi CIHOPRINTSHOP, mulai dari media promosi hingga kebutuhan cetak bisnis. Setiap proyek dikerjakan dengan presisi, material berkualitas, dan perhatian terhadap detail.</p>
 				</div>
 
 				<!-- Stats Strip -->
 				<div class="stats-strip">
 					<div class="stat-item">
-						<span class="stat-val"><span class="stat-count" data-count="1000">1.000</span><span class="stat-accent">+</span></span>
-						<span class="stat-label">Project Selesai Tiap Bulan</span>
+						<span class="stat-val"><span class="stat-count" data-count="100000">100.000</span><span class="stat-accent">+</span></span>
+						<span class="stat-label">Project Selesai</span>
 					</div>
 					<div class="stat-item">
 						<span class="stat-val"><span class="stat-count" data-count="100">100</span><span class="stat-accent">%</span></span>
@@ -44,22 +44,33 @@
 
 		<!-- Portfolio Gallery Grid & Filter -->
 		<div class="page-wrap project-content-v2">
+			<div class="project-gallery-intro">
+				<div>
+					<p class="project-gallery-eyebrow">INSPIRASI HASIL PRODUKSI</p>
+					<h2>Ide menarik, hasil cetak <span>lebih berkesan.</span></h2>
+					<p>Temukan berbagai pilihan produk dan media cetak untuk kebutuhan personal, bisnis, maupun acara spesial.</p>
+				</div>
+			</div>
+
 			<!-- Interactive Category Filter Bar -->
 			<div class="filter-container" id="project-filter" role="tablist" aria-label="Filter Kategori Project">
 				<button class="filter-btn is-active" type="button" data-filter="all">
-					Semua Project <span class="filter-count">10</span>
+					Semua Produk <span class="filter-count">25</span>
 				</button>
 				<button class="filter-btn" type="button" data-filter="merchandise">
-					Merchandise & Souvenir <span class="filter-count">4</span>
+					Merchandise <span class="filter-count">9</span>
 				</button>
 				<button class="filter-btn" type="button" data-filter="kemasan">
-					Kemasan & Box <span class="filter-count">2</span>
+					Kemasan & Box <span class="filter-count">1</span>
 				</button>
 				<button class="filter-btn" type="button" data-filter="banner">
 					Banner & Reklame <span class="filter-count">2</span>
 				</button>
 				<button class="filter-btn" type="button" data-filter="stiker">
 					Label & Stiker <span class="filter-count">2</span>
+				</button>
+				<button class="filter-btn" type="button" data-filter="media">
+					Media Cetak <span class="filter-count">11</span>
 				</button>
 			</div>
 
@@ -153,7 +164,7 @@
 				<!-- Project 6 (Banner Backdrop) -->
 				<article class="project-card-v2" data-category="banner">
 					<div class="project-thumb-box">
-						<img class="project-thumb-img" src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Spanduk dan backdrop promosi format lebar" loading="lazy">
+						<img class="project-thumb-img" src="{{ asset('images/material-flexi-frontlite.png') }}" alt="Contoh bahan flexi frontlite untuk spanduk dan backdrop promosi" loading="lazy">
 						<span class="project-category-tag">Banner & Reklame</span>
 					</div>
 					<div class="project-body">
@@ -170,7 +181,7 @@
 				<!-- Project 7 (Stiker Botol) -->
 				<article class="project-card-v2" data-category="stiker">
 					<div class="project-thumb-box">
-						<img class="project-thumb-img" src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Label stiker kemasan botol minuman dingin" loading="lazy">
+						<img class="project-thumb-img" src="{{ asset('images/material-vinyl-glossy.png') }}" alt="Contoh stiker vinyl glossy untuk label kemasan botol" loading="lazy">
 						<span class="project-category-tag">Label & Stiker</span>
 					</div>
 					<div class="project-body">
@@ -186,7 +197,7 @@
 				<!-- Project 8 (Roll Up Banner) -->
 				<article class="project-card-v2" data-category="banner">
 					<div class="project-thumb-box">
-						<img class="project-thumb-img" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Roll Up Banner promosi interior showroom" loading="lazy">
+						<img class="project-thumb-img" src="{{ asset('images/ciho-banner-printing-products-hd.png') }}" alt="Contoh banner promosi dan media display CIHOPRINTSHOP" loading="lazy">
 						<span class="project-category-tag">Banner & Reklame</span>
 					</div>
 					<div class="project-body">
@@ -199,37 +210,160 @@
 					</div>
 				</article>
 
-				<!-- Project 9 (Stiker Hologram) -->
+				<!-- Project 9 (Stiker Chromo) -->
 				<article class="project-card-v2" data-category="stiker">
 					<div class="project-thumb-box">
-						<img class="project-thumb-img" src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Stiker hologram segel produk dan garansi" loading="lazy">
+						<img class="project-thumb-img" src="{{ asset('images/material-sticker-chromo.png') }}" alt="Contoh stiker chromo untuk label dan kemasan produk" loading="lazy">
 						<span class="project-category-tag">Label & Stiker</span>
 					</div>
 					<div class="project-body">
-						<h3>Stiker Hologram Segel Produk & Garansi Resmi</h3>
-						<p>Label pengaman dengan efek pelangi berkilau untuk segel kemasan barang berharga, suku cadang, dan sertifikat resmi agar terhindar dari pemalsuan.</p>
+						<h3>Label Stiker Chromo untuk Kemasan Produk</h3>
+						<p>Stiker dengan permukaan halus dan hasil warna cerah, cocok untuk label produk, kemasan makanan, dan kebutuhan promosi.</p>
 						<div class="project-meta-row">
-							<span class="project-meta-pill"><strong>Bahan:</strong> Rainbow Hologram</span>
-							<span class="project-meta-pill"><strong>Potong:</strong> Die Cut Satuan</span>
+							<span class="project-meta-pill"><strong>Bahan:</strong> Chromo</span>
+							<span class="project-meta-pill"><strong>Aplikasi:</strong> Label & Kemasan</span>
 						</div>
 					</div>
 				</article>
 
-				<!-- Project 10 (Paper Bag Distro) -->
-				<article class="project-card-v2" data-category="kemasan">
+				<!-- Project 10 (Kaos Custom) -->
+				<article class="project-card-v2" data-category="merchandise">
 					<div class="project-thumb-box">
-						<img class="project-thumb-img" src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Paper bag craft daur ulang ramah lingkungan" loading="lazy">
-						<span class="project-category-tag">Kemasan & Box</span>
+						<img class="project-thumb-img" src="{{ asset('images/hero-produk-kaos.png') }}" alt="Contoh kaos custom untuk promosi dan komunitas" loading="lazy">
+						<span class="project-category-tag">Merchandise & Apparel</span>
 					</div>
 					<div class="project-body">
-						<h3>Paper Bag Distro & Hang Tag Pakaian Ramah Lingkungan</h3>
-						<p>Kemasan berkarakter artisan dari kertas Kraft coklat berserat alami, memberikan identitas hangat dan bernilai estetik tinggi pada produk fashion.</p>
+						<h3>Kaos Custom untuk Komunitas & Promosi</h3>
+						<p>Kaos custom dengan desain penuh warna untuk kebutuhan acara, seragam komunitas, dan merchandise bisnis.</p>
 						<div class="project-meta-row">
-							<span class="project-meta-pill"><strong>Bahan:</strong> Kraft Paper 280g</span>
-							<span class="project-meta-pill"><strong>Aksen:</strong> Tali Kur + Keling Besi</span>
+							<span class="project-meta-pill"><strong>Cetak:</strong> DTF & Sublimasi</span>
+							<span class="project-meta-pill"><strong>Desain:</strong> Bebas Custom</span>
 						</div>
 					</div>
 				</article>
+
+				@php
+				$additionalProjects = [
+					[
+						'category' => 'merchandise',
+						'label' => 'Merchandise & Apparel',
+						'image' => 'produk-kaos-custom.png',
+						'title' => 'Kaos Custom Full Print',
+						'description' => 'Pilihan pakaian custom untuk promosi, seragam, dan acara komunitas.',
+					],
+					[
+						'category' => 'merchandise',
+						'label' => 'Merchandise & Event',
+						'image' => 'produk-medali.png',
+						'title' => 'Medali Custom untuk Event',
+						'description' => 'Kenang-kenangan acara dengan desain dan identitas event pilihan Anda.',
+					],
+					[
+						'category' => 'merchandise',
+						'label' => 'Merchandise & Souvenir',
+						'image' => 'produk-plakat-tumbler.png',
+						'title' => 'Plakat & Tumbler Custom',
+						'description' => 'Souvenir personal untuk hadiah, apresiasi, dan kegiatan perusahaan.',
+					],
+					[
+						'category' => 'merchandise',
+						'label' => 'Merchandise & Souvenir',
+						'image' => 'produk-powerbank-custom.png',
+						'title' => 'Powerbank Custom',
+						'description' => 'Perangkat praktis dengan tampilan desain atau identitas bisnis Anda.',
+					],
+					[
+						'category' => 'media',
+						'label' => 'Kertas & Media Cetak',
+						'image' => 'material-art-carton.png',
+						'title' => 'Art Carton untuk Kartu & Kemasan',
+						'description' => 'Kertas tebal dengan permukaan halus untuk kartu, cover, dan kemasan.',
+					],
+					[
+						'category' => 'media',
+						'label' => 'Kertas & Media Cetak',
+						'image' => 'material-art-papper-150gr.png',
+						'title' => 'Art Paper 150gr',
+						'description' => 'Kertas dengan permukaan licin untuk brosur, flyer, dan materi promosi.',
+					],
+					[
+						'category' => 'media',
+						'label' => 'Kertas & Media Cetak',
+						'image' => 'material-brief-card-200gr.png',
+						'title' => 'Brief Card 200gr',
+						'description' => 'Media kartu yang pas untuk kartu ucapan, insert, dan kebutuhan stationery.',
+					],
+					[
+						'category' => 'media',
+						'label' => 'Kertas & Media Cetak',
+						'image' => 'material-concorde-80gr.png',
+						'title' => 'Concorde 80gr',
+						'description' => 'Kertas bertekstur untuk kebutuhan surat, undangan, dan stationery.',
+					],
+					[
+						'category' => 'media',
+						'label' => 'Kertas & Media Cetak',
+						'image' => 'material-hvs-80gr-bw-1-side.png',
+						'title' => 'HVS Hitam Putih Satu Sisi',
+						'description' => 'Cetak dokumen hitam putih satu sisi untuk kebutuhan harian.',
+					],
+					[
+						'category' => 'media',
+						'label' => 'Kertas & Media Cetak',
+						'image' => 'material-hvs-80gr-bw-2-side.png',
+						'title' => 'HVS Hitam Putih Dua Sisi',
+						'description' => 'Cetak dokumen bolak-balik yang rapi dan efisien.',
+					],
+					[
+						'category' => 'media',
+						'label' => 'Kertas & Media Cetak',
+						'image' => 'material-hvs-80gr-color-1-side.png',
+						'title' => 'HVS Warna Satu Sisi',
+						'description' => 'Cetak warna untuk kebutuhan dokumen, materi belajar, dan informasi.',
+					],
+					[
+						'category' => 'media',
+						'label' => 'Kertas & Media Cetak',
+						'image' => 'material-hvs-80gr-color-2-side.png',
+						'title' => 'HVS Warna Dua Sisi',
+						'description' => 'Cetak warna bolak-balik untuk dokumen yang praktis dan informatif.',
+					],
+					[
+						'category' => 'media',
+						'label' => 'Kertas & Media Cetak',
+						'image' => 'material-ivory-250gr.png',
+						'title' => 'Ivory 250gr',
+						'description' => 'Kertas tebal dengan satu sisi halus untuk kartu dan kemasan.',
+					],
+					[
+						'category' => 'media',
+						'label' => 'Kertas & Media Cetak',
+						'image' => 'material-jasmine-natural-80gr.png',
+						'title' => 'Jasmine Natural 80gr',
+						'description' => 'Kertas bertekstur dengan nuansa natural untuk undangan dan stationery.',
+					],
+					[
+						'category' => 'media',
+						'label' => 'Kertas & Media Cetak',
+						'image' => 'material-jasmine-white-80gr.png',
+						'title' => 'Jasmine White 80gr',
+						'description' => 'Kertas putih bertekstur untuk undangan dan kebutuhan cetak khusus.',
+					],
+				];
+				@endphp
+
+				@foreach ($additionalProjects as $project)
+					<article class="project-card-v2 is-compact-project" data-category="{{ $project['category'] }}">
+						<div class="project-thumb-box">
+							<img class="project-thumb-img" src="{{ asset('images/' . $project['image']) }}" alt="{{ $project['title'] }}" loading="lazy" decoding="async">
+							<span class="project-category-tag">{{ $project['label'] }}</span>
+						</div>
+						<div class="project-body">
+							<h3>{{ $project['title'] }}</h3>
+							<p>{{ $project['description'] }}</p>
+						</div>
+					</article>
+				@endforeach
 			</div>
 
 			<!-- Bottom CTA -->
