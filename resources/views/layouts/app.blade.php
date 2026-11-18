@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+    <meta name="google-site-verification" content="bh-Qarbz4Z8H2a7nGLqVG_JOcZ-NfSLdD5H1dC4LOxU" />
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
