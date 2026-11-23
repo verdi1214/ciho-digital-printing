@@ -90,8 +90,8 @@
 				@foreach ($machines as $machine)
 					<article class="machine-card {{ $machine['image'] ? 'machine-card-featured' : 'machine-card-placeholder' }}">
 						@if ($machine['image'])
-							<div class="machine-card-visual {{ $loop->index < 9 ? 'machine-card-visual-full' : '' }}">
-								<img class="machine-photo {{ $loop->index < 9 ? 'machine-photo-full' : '' }}" src="{{ $machine['image'] }}" alt="{{ $machine['image_alt'] }}">
+							<div class="machine-card-visual machine-card-visual-full">
+								<img class="machine-photo machine-photo-full" src="{{ $machine['image'] }}" alt="{{ $machine['image_alt'] }}">
 							</div>
 						@else
 							<div class="machine-placeholder-visual" aria-hidden="true">
