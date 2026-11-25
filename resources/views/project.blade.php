@@ -79,7 +79,7 @@
 				<!-- Project 1 (Featured: Jersey Kaos Custom) -->
 				<article class="project-card-v2 is-featured-project" data-category="merchandise">
 					<div class="project-thumb-box">
-						<img class="project-thumb-img" src="{{ asset('images/portofolio-jersey-kaos.jpg') }}" alt="Jersey printing sublimasi dan kaos komunitas lari Ewako Runners" loading="lazy">
+						<img class="project-thumb-img" src="{{ asset('images/portofolio-jersey-kaos.png') }}" alt="Jersey printing sublimasi dan kaos komunitas lari Ewako Runners" loading="lazy">
 						<span class="project-category-tag">Merchandise & Apparel</span>
 					</div>
 					<div class="project-body">
@@ -96,7 +96,7 @@
 				<!-- Project 2 (Lanyard & Medali) -->
 				<article class="project-card-v2" data-category="merchandise">
 					<div class="project-thumb-box">
-						<img class="project-thumb-img" src="{{ asset('images/portofolio-lanyard-medali.jpg') }}" alt="Tali lanyard custom dan medali event Bulan K3 Nasional" loading="lazy">
+						<img class="project-thumb-img" src="{{ asset('images/portofolio-lanyard-medali.png') }}" alt="Tali lanyard custom dan medali event Bulan K3 Nasional" loading="lazy">
 						<span class="project-category-tag">Merchandise & Event</span>
 					</div>
 					<div class="project-body">
@@ -113,7 +113,7 @@
 				<!-- Project 3 (Plakat Akrilik & Cinderamata) -->
 				<article class="project-card-v2" data-category="merchandise">
 					<div class="project-thumb-box">
-						<img class="project-thumb-img" src="{{ asset('images/portofolio-plakat-penghargaan.jpg') }}" alt="Plakat akrilik penghargaan wisuda kedinasan dan cinderamata custom" loading="lazy">
+						<img class="project-thumb-img" src="{{ asset('images/portofolio-plakat-penghargaan.png') }}" alt="Plakat akrilik penghargaan wisuda kedinasan dan cinderamata custom" loading="lazy">
 						<span class="project-category-tag">Merchandise & Plakat</span>
 					</div>
 					<div class="project-body">
