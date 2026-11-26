@@ -55,10 +55,10 @@
 			<!-- Interactive Category Filter Bar -->
 			<div class="filter-container" id="project-filter" role="tablist" aria-label="Filter Kategori Project">
 				<button class="filter-btn is-active" type="button" data-filter="all">
-					Semua Produk <span class="filter-count">25</span>
+					Semua Produk <span class="filter-count">22</span>
 				</button>
 				<button class="filter-btn" type="button" data-filter="merchandise">
-					Merchandise <span class="filter-count">9</span>
+					Merchandise <span class="filter-count">6</span>
 				</button>
 				<button class="filter-btn" type="button" data-filter="kemasan">
 					Kemasan & Box <span class="filter-count">1</span>
@@ -79,7 +79,7 @@
 				<!-- Project 1 (Featured: Jersey Kaos Custom) -->
 				<article class="project-card-v2 is-featured-project" data-category="merchandise">
 					<div class="project-thumb-box">
-						<img class="project-thumb-img" src="{{ asset('images/portofolio-jersey-kaos.png') }}" alt="Jersey printing sublimasi dan kaos komunitas lari Ewako Runners" loading="lazy">
+						<img class="project-thumb-img" src="{{ asset('images/portofolio-jersey-kaos-baru.png') }}" alt="Jersey printing sublimasi dan kaos komunitas lari Ewako Runners" loading="lazy">
 						<span class="project-category-tag">Merchandise & Apparel</span>
 					</div>
 					<div class="project-body">
@@ -130,7 +130,7 @@
 				<!-- Project 4 (Hardbox Kemasan & Mug) -->
 				<article class="project-card-v2" data-category="kemasan">
 					<div class="project-thumb-box">
-						<img class="project-thumb-img" src="{{ asset('images/portofolio-kemasan-box-mug.jpg') }}" alt="Hardbox kemasan souvenir wedding dan custom mug hampers" loading="lazy">
+						<img class="project-thumb-img" src="{{ asset('images/portofolio-kemasan-box-mug-baru.png') }}" alt="Hardbox kemasan souvenir wedding dan custom mug hampers" loading="lazy">
 						<span class="project-category-tag">Kemasan & Box</span>
 					</div>
 					<div class="project-body">
@@ -147,7 +147,7 @@
 				<!-- Project 5 (Tumbler Custom) -->
 				<article class="project-card-v2" data-category="merchandise">
 					<div class="project-thumb-box">
-						<img class="project-thumb-img" src="{{ asset('images/portofolio-tumbler-custom.jpg') }}" alt="Tumbler stainless steel custom print UV dan grafir souvenir" loading="lazy">
+						<img class="project-thumb-img" src="{{ asset('images/portofolio-tumbler-custom-baru.png') }}" alt="Tumbler stainless steel custom print UV dan grafir souvenir" loading="lazy">
 						<span class="project-category-tag">Merchandise & Souvenir</span>
 					</div>
 					<div class="project-body">
@@ -164,7 +164,7 @@
 				<!-- Project 6 (Banner Backdrop) -->
 				<article class="project-card-v2" data-category="banner">
 					<div class="project-thumb-box">
-						<img class="project-thumb-img" src="{{ asset('images/material-flexi-frontlite.png') }}" alt="Contoh bahan flexi frontlite untuk spanduk dan backdrop promosi" loading="lazy">
+						<img class="project-thumb-img" src="{{ asset('images/portofolio-backdrop-panggung-baru.png') }}" alt="Backdrop panggung seminar Inspirasi Hari Ini untuk Masa Depan" loading="lazy">
 						<span class="project-category-tag">Banner & Reklame</span>
 					</div>
 					<div class="project-body">
@@ -181,7 +181,7 @@
 				<!-- Project 7 (Stiker Botol) -->
 				<article class="project-card-v2" data-category="stiker">
 					<div class="project-thumb-box">
-						<img class="project-thumb-img" src="{{ asset('images/material-vinyl-glossy.png') }}" alt="Contoh stiker vinyl glossy untuk label kemasan botol" loading="lazy">
+						<img class="project-thumb-img" src="{{ asset('images/portofolio-label-botol-frozen-baru.png') }}" alt="Label stiker botol minuman dan kemasan frozen food waterproof" loading="lazy">
 						<span class="project-category-tag">Label & Stiker</span>
 					</div>
 					<div class="project-body">
@@ -197,7 +197,7 @@
 				<!-- Project 8 (Roll Up Banner) -->
 				<article class="project-card-v2" data-category="banner">
 					<div class="project-thumb-box">
-						<img class="project-thumb-img" src="{{ asset('images/ciho-banner-printing-products-hd.png') }}" alt="Contoh banner promosi dan media display CIHOPRINTSHOP" loading="lazy">
+						<img class="project-thumb-img" src="{{ asset('images/portofolio-roll-up-banner-baru.png') }}" alt="Roll up banner pameran dan display showroom custom" loading="lazy">
 						<span class="project-category-tag">Banner & Reklame</span>
 					</div>
 					<div class="project-body">
@@ -213,7 +213,7 @@
 				<!-- Project 9 (Stiker Chromo) -->
 				<article class="project-card-v2" data-category="stiker">
 					<div class="project-thumb-box">
-						<img class="project-thumb-img" src="{{ asset('images/material-sticker-chromo.png') }}" alt="Contoh stiker chromo untuk label dan kemasan produk" loading="lazy">
+						<img class="project-thumb-img" src="{{ asset('images/portofolio-label-stiker-chromo-baru.png') }}" alt="Contoh label stiker chromo untuk kemasan produk" loading="lazy">
 						<span class="project-category-tag">Label & Stiker</span>
 					</div>
 					<div class="project-body">
@@ -226,44 +226,14 @@
 					</div>
 				</article>
 
-				<!-- Project 10 (Kaos Custom) -->
-				<article class="project-card-v2" data-category="merchandise">
-					<div class="project-thumb-box">
-						<img class="project-thumb-img" src="{{ asset('images/hero-produk-kaos.png') }}" alt="Contoh kaos custom untuk promosi dan komunitas" loading="lazy">
-						<span class="project-category-tag">Merchandise & Apparel</span>
-					</div>
-					<div class="project-body">
-						<h3>Kaos Custom untuk Komunitas & Promosi</h3>
-						<p>Kaos custom dengan desain penuh warna untuk kebutuhan acara, seragam komunitas, dan merchandise bisnis.</p>
-						<div class="project-meta-row">
-							<span class="project-meta-pill"><strong>Cetak:</strong> DTF & Sublimasi</span>
-							<span class="project-meta-pill"><strong>Desain:</strong> Bebas Custom</span>
-						</div>
-					</div>
-				</article>
-
 				@php
 				$additionalProjects = [
 					[
 						'category' => 'merchandise',
 						'label' => 'Merchandise & Apparel',
-						'image' => 'produk-kaos-custom.png',
+						'image' => 'produk-kaos-custom-baru.png',
 						'title' => 'Kaos Custom Full Print',
 						'description' => 'Pilihan pakaian custom untuk promosi, seragam, dan acara komunitas.',
-					],
-					[
-						'category' => 'merchandise',
-						'label' => 'Merchandise & Event',
-						'image' => 'produk-medali.png',
-						'title' => 'Medali Custom untuk Event',
-						'description' => 'Kenang-kenangan acara dengan desain dan identitas event pilihan Anda.',
-					],
-					[
-						'category' => 'merchandise',
-						'label' => 'Merchandise & Souvenir',
-						'image' => 'produk-plakat-tumbler.png',
-						'title' => 'Plakat & Tumbler Custom',
-						'description' => 'Souvenir personal untuk hadiah, apresiasi, dan kegiatan perusahaan.',
 					],
 					[
 						'category' => 'merchandise',
@@ -275,7 +245,7 @@
 					[
 						'category' => 'media',
 						'label' => 'Kertas & Media Cetak',
-						'image' => 'material-art-carton.png',
+						'image' => 'portofolio-art-carton-kartu-nama-baru.png',
 						'title' => 'Art Carton untuk Kartu & Kemasan',
 						'description' => 'Kertas tebal dengan permukaan halus untuk kartu, cover, dan kemasan.',
 					],

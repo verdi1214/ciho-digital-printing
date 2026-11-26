@@ -1069,7 +1069,7 @@
 					</header>
 					<div class="material-grid">
 				<article class="material-card-v2" data-category="mug-custom">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/portofolio-kemasan-box-mug.jpg') }}" alt="Contoh mug putih custom dengan desain cetak" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/portofolio-kemasan-box-mug-baru.png') }}" alt="Contoh mug putih custom dengan desain cetak" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>Putih polos (bebas didesain)</h3>
 						<p class="material-desc">Mug putih polos yang dapat dicetak dengan desain custom sesuai keinginan.</p>
