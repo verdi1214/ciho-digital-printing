@@ -58,14 +58,14 @@
 				<div class="map-container-v2">
 					<iframe
 						class="google-map-iframe"
-						src="https://maps.google.com/maps?q=Jl.+Radio+Dalam+Raya+No.F3B,+RT.5%2FRW.4,+Gandaria+Utara,+Kec.+Kby.+Baru,+Kota+Jakarta+Selatan,+Daerah+Khusus+Ibukota+Jakarta+12140&t=&z=17&ie=UTF8&iwloc=&output=embed"
+						src="https://maps.google.com/maps?q=Jl.+Radio+Dalam+Raya+No.F3A,+RT.5%2FRW.4,+Gandaria+Utara,+Kec.+Kby.+Baru,+Kota+Jakarta+Selatan,+Daerah+Khusus+Ibukota+Jakarta+12140&t=&z=17&ie=UTF8&iwloc=&output=embed"
 						loading="lazy"
 						allowfullscreen=""
 						referrerpolicy="no-referrer-when-downgrade"
-						title="Peta Lokasi Workshop CIHOPRINTSHOP – Jl. Radio Dalam Raya No.F3B, RT.5/RW.4, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12140">
+						title="Peta Lokasi Workshop CIHOPRINTSHOP – Jl. Radio Dalam Raya No.F3A, RT.5/RW.4, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12140">
 					</iframe>
 
-					<a class="map-floating-action" href="https://www.google.com/maps/search/?api=1&query=Jl.+Radio+Dalam+Raya+No.F3B,+RT.5%2FRW.4,+Gandaria+Utara,+Kec.+Kby.+Baru,+Kota+Jakarta+Selatan,+Daerah+Khusus+Ibukota+Jakarta+12140" target="_blank" rel="noopener noreferrer">
+					<a class="map-floating-action" href="https://www.google.com/maps/search/?api=1&query=Jl.+Radio+Dalam+Raya+No.F3A,+RT.5%2FRW.4,+Gandaria+Utara,+Kec.+Kby.+Baru,+Kota+Jakarta+Selatan,+Daerah+Khusus+Ibukota+Jakarta+12140" target="_blank" rel="noopener noreferrer">
 						<span>Buka Rute di Google Maps</span>
 						<span class="button-arrow" aria-hidden="true">↗</span>
 					</a>
@@ -78,7 +78,7 @@
 				<div class="location-address-block">
 					<div class="badge-pill">ALAMAT WORKSHOP</div>
 					<h3 class="workshop-name">CIHO JAKARTA PRINTSHOP</h3>
-					<p class="workshop-address" id="workshop-full-address">Jl. Radio Dalam Raya No.F3B, RT.5/RW.4, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12140</p>
+					<p class="workshop-address" id="workshop-full-address">Jl. Radio Dalam Raya No.F3A, RT.5/RW.4, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12140</p>
 
 					<button class="copy-address-btn" id="copy-address-trigger" type="button" aria-label="Salin alamat workshop">
 						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>

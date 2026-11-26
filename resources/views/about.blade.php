@@ -62,7 +62,7 @@
 					<li class="about-history-card">
 						<p class="about-history-year">2024</p>
 						<h3>Hadir lebih dekat di Jakarta</h3>
-						<p>Pada 2024, CIHO Jakarta Printshop hadir di Jalan Radio Dalam Raya No. F3B, Jakarta Selatan. Kehadirannya bertujuan menyediakan layanan percetakan modern dan berkualitas bagi masyarakat, bisnis, UMKM, industri kreatif, instansi pemerintahan, serta kalangan akademis. Untuk informasi dan pemesanan, hubungi <a href="tel:+6281390001217">0813-9000-1217</a>.</p>
+						<p>Pada 2024, CIHO Jakarta Printshop hadir di Jalan Radio Dalam Raya No. F3A, Jakarta Selatan. Kehadirannya bertujuan menyediakan layanan percetakan modern dan berkualitas bagi masyarakat, bisnis, UMKM, industri kreatif, instansi pemerintahan, serta kalangan akademis. Untuk informasi dan pemesanan, hubungi <a href="tel:+6281390001217">0813-9000-1217</a>.</p>
 					</li>
 					<li class="about-history-card">
 						<p class="about-history-year">SEKARANG</p>
