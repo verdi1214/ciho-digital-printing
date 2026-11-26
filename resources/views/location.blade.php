@@ -86,7 +86,7 @@
 					</button>
 				</div>
 
-				<!-- Operating Schedule -->3
+				<!-- Operating Schedule -->
 				<div class="operating-hours-box">
 					<div class="operating-hours-header">
 						<h4>Jadwal Kunjungan & Layanan</h4>
