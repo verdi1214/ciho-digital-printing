@@ -120,7 +120,7 @@
 					</header>
 					<div class="material-grid material-grid-four">
 				<article class="material-card-v2" data-category="hvs">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-hvs-80gr-bw-1-side.png') }}?v=1" alt="Ilustrasi umum cetak hitam putih satu sisi pada kertas HVS 80 gram" width="600" height="600" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-hvs-bw-1-side.png') }}" alt="Ilustrasi umum cetak hitam putih satu sisi pada kertas HVS 80 gram" width="600" height="600" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>HVS 80gr B&amp;W 1 sisi</h3>
 						<p class="material-desc">Cetak hitam-putih satu sisi pada kertas HVS 80 gsm.</p>
@@ -133,7 +133,7 @@
 					</div>
 				</article>
 				<article class="material-card-v2" data-category="hvs">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-hvs-80gr-bw-2-side.png') }}?v=1" alt="Ilustrasi umum cetak hitam putih dua sisi pada kertas HVS 80 gram" width="600" height="600" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-hvs-bw-2-side.png') }}" alt="Ilustrasi umum cetak hitam putih dua sisi pada kertas HVS 80 gram" width="600" height="600" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>HVS 80gr B&amp;W 2 sisi</h3>
 						<p class="material-desc">Cetak hitam-putih bolak-balik pada kertas HVS 80 gsm.</p>
@@ -146,7 +146,7 @@
 					</div>
 				</article>
 				<article class="material-card-v2" data-category="hvs">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-hvs-80gr-color-1-side.png') }}?v=1" alt="Ilustrasi umum cetak warna satu sisi pada kertas HVS 80 gram" width="600" height="600" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-hvs-color-1-side.png') }}" alt="Ilustrasi umum cetak warna satu sisi pada kertas HVS 80 gram" width="600" height="600" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>HVS 80gr Warna 1 sisi</h3>
 						<p class="material-desc">Cetak warna satu sisi pada kertas HVS 80 gsm.</p>
@@ -159,7 +159,7 @@
 					</div>
 				</article>
 				<article class="material-card-v2" data-category="hvs">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-hvs-80gr-color-2-side.png') }}?v=1" alt="Ilustrasi umum cetak warna dua sisi pada kertas HVS 80 gram" width="600" height="600" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-hvs-color-2-side.png') }}" alt="Ilustrasi umum cetak warna dua sisi pada kertas HVS 80 gram" width="600" height="600" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>HVS 80gr Warna 2 sisi</h3>
 						<p class="material-desc">Cetak warna bolak-balik pada kertas HVS 80 gsm.</p>
@@ -180,7 +180,7 @@
 					</header>
 					<div class="material-grid">
 				<article class="material-card-v2" data-category="art-paper-carton">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-art-papper-150gr.png') }}" alt="Ilustrasi umum kertas Art Papper 150 gram" width="768" height="768" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-art-paper-150gr.png') }}" alt="Ilustrasi umum kertas Art Papper 150 gram" width="768" height="768" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>Art Papper 150gr 1 sisi</h3>
 						<p class="material-desc">Kertas Art Paper 150 gram dengan cetak satu sisi, cocok untuk kebutuhan promosi.</p>
@@ -193,7 +193,7 @@
 					</div>
 				</article>
 				<article class="material-card-v2" data-category="art-paper-carton">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-art-papper-150gr.png') }}" alt="Ilustrasi umum kertas Art Papper 150 gram" width="768" height="768" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-art-paper-150gr.png') }}" alt="Ilustrasi umum kertas Art Papper 150 gram" width="768" height="768" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>Art Papper 150gr 2 sisi</h3>
 						<p class="material-desc">Kertas Art Paper 150 gram dengan cetak bolak-balik untuk materi promosi dua sisi.</p>
@@ -464,7 +464,7 @@
 					</header>
 					<div class="material-grid">
 				<article class="material-card-v2" data-category="fancy-paper">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-concorde-80gr.png') }}?v=3" alt="Tumpukan kertas Concorde 80 gram bertekstur" width="600" height="600" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-concorde-80gr.png') }}" alt="Tumpukan kertas Concorde 80 gram bertekstur" width="600" height="600" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>Concorde 80gr</h3>
 						<p class="material-desc">Kertas fancy bertekstur untuk kebutuhan surat, stationery, dan cetak kreatif.</p>
@@ -477,7 +477,7 @@
 					</div>
 				</article>
 				<article class="material-card-v2" data-category="fancy-paper">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-ivory-250gr.png') }}?v=2" alt="Tumpukan kertas Ivory 250 gram" width="600" height="600" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-ivory-250gr.png') }}" alt="Tumpukan kertas Ivory 250 gram" width="600" height="600" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>Ivory 250gr</h3>
 						<p class="material-desc">Kertas ivory 250 gram yang tebal dan kokoh, cocok untuk kemasan dan kebutuhan cetak.</p>
@@ -490,7 +490,7 @@
 					</div>
 				</article>
 				<article class="material-card-v2" data-category="fancy-paper">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-linen-230gr.png') }}?v=2" alt="Tumpukan kertas Linen Jepang 230 gram bertekstur" width="600" height="600" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-linen-230gr.png') }}" alt="Lembaran kertas Linen 230 gram" width="600" height="600" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>Linen 230gr</h3>
 						<p class="material-desc">Kertas bertekstur serat untuk undangan, kartu nama, dan kebutuhan cetak eksklusif.</p>
@@ -503,7 +503,7 @@
 					</div>
 				</article>
 				<article class="material-card-v2" data-category="fancy-paper">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-jasmine-white-80gr.png') }}?v=1" alt="Kemasan kertas Jasmine White 80 gram" width="600" height="600" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-jasmine-white-80gr.png') }}" alt="Kemasan kertas Jasmine White 80 gram" width="600" height="600" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>Jasmine White 80gr</h3>
 						<p class="material-desc">Kertas putih 80 gram untuk kebutuhan cetak dengan tampilan ringan dan elegan.</p>
@@ -516,7 +516,7 @@
 					</div>
 				</article>
 				<article class="material-card-v2" data-category="fancy-paper">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-jasmine-natural-80gr.png') }}?v=1" alt="Lembaran kertas Jasmine Plasma Natural 80 gram" width="600" height="600" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-jasmine-natural-80gr.png') }}" alt="Lembaran kertas Jasmine Plasma Natural 80 gram" width="600" height="600" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>Jasmine Natural 80gr</h3>
 						<p class="material-desc">Kertas Fancy Paper Jasmine Plasma natural 80 gram ukuran 79 × 109 cm, cocok untuk undangan dan kebutuhan cetak bernuansa natural.</p>
@@ -529,7 +529,7 @@
 					</div>
 				</article>
 				<article class="material-card-v2" data-category="fancy-paper">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-brief-card-200gr.png') }}?v=1" alt="Tumpukan kertas Brief Card (TIK) 200 gram ukuran A4" width="600" height="600" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-brief-card-200gr.png') }}" alt="Tumpukan kertas Brief Card (TIK) 200 gram ukuran A4" width="600" height="600" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>Brief Card (TIK) 200gr</h3>
 						<p class="material-desc">Kertas HVS tebal 200 gsm ukuran A4 (21,5 × 29,7 cm) untuk kebutuhan cetak kartu dan dokumen.</p>
@@ -902,7 +902,7 @@
 					</header>
 					<div class="material-grid">
 				<article class="material-card-v2" data-category="kartu-nama">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-linen-230gr.png') }}?v=2" alt="Ilustrasi kertas Linen 230 gram untuk kartu nama cetak satu sisi" width="600" height="600" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-linen-230gr.png') }}" alt="Kertas Linen 230 gram untuk kartu nama cetak satu sisi" width="600" height="600" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>Linen 230gr - 1 sisi</h3>
 						<p class="material-desc">Kartu nama berbahan Linen 230 gram dengan cetak satu sisi. Satu box berisi 100 pcs.</p>
@@ -915,7 +915,7 @@
 					</div>
 				</article>
 				<article class="material-card-v2" data-category="kartu-nama">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-linen-230gr.png') }}?v=2" alt="Ilustrasi kertas Linen 230 gram untuk kartu nama cetak dua sisi" width="600" height="600" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-linen-230gr.png') }}" alt="Kertas Linen 230 gram untuk kartu nama cetak dua sisi" width="600" height="600" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>Linen 230gr - 2 sisi</h3>
 						<p class="material-desc">Kartu nama berbahan Linen 230 gram dengan cetak dua sisi. Satu box berisi 100 pcs.</p>
@@ -975,7 +975,7 @@
 					</header>
 					<div class="material-grid">
 				<article class="material-card-v2" data-category="brosur-leaflet-flyer">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-art-papper-150gr.png') }}" alt="Ilustrasi kertas Art Paper 150 gram untuk brosur A4 cetak satu sisi" width="768" height="768" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-art-paper-150gr.png') }}" alt="Ilustrasi kertas Art Paper 150 gram untuk brosur A4 cetak satu sisi" width="768" height="768" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>(A4) AP 150gr - 1 sisi - 1rim</h3>
 						<p class="material-desc">Cetak brosur, leaflet, atau flyer ukuran A4 pada Art Paper 150 gram, satu sisi. Paket satu rim.</p>
@@ -988,7 +988,7 @@
 					</div>
 				</article>
 				<article class="material-card-v2" data-category="brosur-leaflet-flyer">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-art-papper-150gr.png') }}" alt="Ilustrasi kertas Art Paper 150 gram untuk brosur A4 cetak dua sisi" width="768" height="768" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-art-paper-150gr.png') }}" alt="Ilustrasi kertas Art Paper 150 gram untuk brosur A4 cetak dua sisi" width="768" height="768" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>(A4) AP 150gr - 2 sisi - 1rim</h3>
 						<p class="material-desc">Cetak brosur, leaflet, atau flyer ukuran A4 pada Art Paper 150 gram, dua sisi. Paket satu rim.</p>
@@ -1001,7 +1001,7 @@
 					</div>
 				</article>
 				<article class="material-card-v2" data-category="brosur-leaflet-flyer">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-art-papper-150gr.png') }}" alt="Ilustrasi kertas Art Paper 150 gram untuk brosur A5 cetak satu sisi" width="768" height="768" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-art-paper-150gr.png') }}" alt="Ilustrasi kertas Art Paper 150 gram untuk brosur A5 cetak satu sisi" width="768" height="768" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>(A5) AP 150gr - 1 sisi - 1rim</h3>
 						<p class="material-desc">Cetak brosur, leaflet, atau flyer ukuran A5 pada Art Paper 150 gram, satu sisi. Paket satu rim.</p>
@@ -1014,7 +1014,7 @@
 					</div>
 				</article>
 				<article class="material-card-v2" data-category="brosur-leaflet-flyer">
-					<img class="material-card-image material-card-image-poster" src="{{ asset('images/material-art-papper-150gr.png') }}" alt="Ilustrasi kertas Art Paper 150 gram untuk brosur A5 cetak dua sisi" width="768" height="768" loading="lazy" decoding="async">
+					<img class="material-card-image material-card-image-poster" src="{{ asset('images/product-art-paper-150gr.png') }}" alt="Ilustrasi kertas Art Paper 150 gram untuk brosur A5 cetak dua sisi" width="768" height="768" loading="lazy" decoding="async">
 					<div class="material-card-copy">
 						<h3>(A5) AP 150gr - 2 sisi - 1rim</h3>
 						<p class="material-desc">Cetak brosur, leaflet, atau flyer ukuran A5 pada Art Paper 150 gram, dua sisi. Paket satu rim.</p>
