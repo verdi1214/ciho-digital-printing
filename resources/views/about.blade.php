@@ -57,7 +57,7 @@
 					<li class="about-history-card">
 						<p class="about-history-year">2005/2006</p>
 						<h3>Berawal di Sumedang</h3>
-						<p>Perjalanan CIHO bermula di Sumedang pada 2005/2006. Di bawah naungan CIHO Grup, Hendra Nugraha Diatmadja (Hendra Ciho) membangun usaha percetakan kreatif dan kepercayaan pelanggan di Jawa Barat sebelum memperluas jangkauan ke Jakarta.</p>
+						<p>Perjalanan CIHO bermula di Sumedang pada 2005/2006 dan membangun usaha percetakan kreatif dan kepercayaan pelanggan di Jawa Barat sebelum memperluas jangkauan ke Jakarta.</p>
 					</li>
 					<li class="about-history-card">
 						<p class="about-history-year">2024</p>
